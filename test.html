@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/slick.css" type = "text/css">
+    <link rel = "stylesheet" href = "css/indexStyle.css" type = "text/css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="slick-slider">
+        <div><img src="media/SliderItem1.png" width="100%" height="519px"></div>
+        <div><img src="media/SliderItem2.jpg" width="100%" height="519px"></div>
+        <div><img src="media/SliderItem3.jpg" width="100%" height="519px"></div>
+    </div>
+    <div class="mainSlider">
+        <div class="mainSliderTextBox">
+            <h1>Ремонт техніки в Білій Церкві</h1>
+            <div class="mainSliderAchives">
+                <img class = "mainSliderIcon" src="media/icons/speed.png" alt="speed" >
+                <p>Оперативно</p>
+                <img class = "mainSliderIcon" src="media/icons/cheep.png" alt="speed" >
+                <p>Доступно</p>
+                <img class = "mainSliderIcon" src="media/icons/safe.png" alt="speed" >
+                <p>Надійно</p>
+            </div>
+        </div>
+        <div class="mainSliderDecoration"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+  
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slick-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            zIndex: 0,
+        });
+      });
+    </script>
+</body>
+</html>

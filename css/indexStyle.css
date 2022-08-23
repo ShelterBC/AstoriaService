@@ -1,0 +1,424 @@
+@font-face {
+    font-family: Inter;
+    src: url("../fonts/Inter-Regular.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter-medium;
+    src: url("../fonts/Inter-Medium.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter-semibold;
+    src: url("../fonts/Inter-SemiBold.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter-bold;
+    src: url("../fonts/Inter-Bold.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter-extrabold;
+    src: url("../fonts/Inter-ExtraBold.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter-light;
+    src: url("../fonts/Inter-Light.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter-extralight;
+    src: url("../fonts/Inter-ExtraLight.otf");
+    font-display: swap;
+}
+
+
+html,body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    --mainColor--: #006E36;
+}
+
+.header {
+    width: 100%;
+    height: 140px;
+    background-color: black;
+}
+
+.headerLogo {
+    position: absolute;
+    width: 408px;
+    height: 89px;
+    left: 580px;
+    top: 25px;
+}
+
+.navigation {
+    position: sticky;
+    top:0;
+    width: calc(100% - 200px);
+    height: 63px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #1D1D1D;
+    color: #FFFFFF;
+
+
+    font-family: Inter-bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navigation a:hover {
+    cursor: pointer;
+    color: var(--mainColor--);
+}
+
+.mainSlider {
+    position: absolute;
+    top:203px;
+    width: 100%;
+    height: 519px;
+}
+
+.mainSliderDecoration {
+    position: absolute;
+	width: 770px;
+	border-top: 519px solid rgba(0, 0, 0, 0.68);; 
+	border-right: 420px solid transparent;	
+    z-index: 1;
+}
+
+.mainSliderTextBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    left: 50px;
+    top: 28px;
+
+    align-items: flex-start;
+
+    z-index: 2;
+}
+
+.mainSliderTextBox h1 {
+    font-family: Inter-extrabold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+
+    color: #FFFFFF;
+}
+
+.mainSliderTextBox p{
+    font-family: Inter-bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    color: #FFFFFF;
+
+}
+
+.mainSliderAchives {
+    display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
+
+    gap: 20px 40px;
+
+    align-items: center;
+
+    height: 64px;
+}
+
+.mainSliderIcon {
+    width: 64px;
+    height: 64px;
+}
+
+.serviceBox {
+    position: relative;
+    width: 100%;
+    height: 741px;
+
+    margin-top: 30px;
+    background: #FBFBFB;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceBox h2 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+
+    margin: 20px;
+
+    color: #000000;
+}
+
+.serviceBox p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0;
+    color: #000000;
+}
+
+.serviceBox a {
+    font-family: Inter-light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+
+    margin: 19px;
+
+    color: #006E36;
+
+    text-decoration: none;
+}
+
+
+.PCPhoto {
+    position: absolute;
+    width: 750px;
+    height: 542px;
+    top: 199px;
+    right: 243px;
+}
+
+.LaptopPhoto {
+    position: absolute;
+    width: 1200px;
+    height: 457px;
+    top: 283px;
+    right: 120px;
+}
+
+.PhonePhotoOne {
+    position: absolute;
+    width: 577px;
+    height: 535px;
+    top: 206px;
+    left: 5px;
+}
+
+.PhonePhotoTwo {
+    position: absolute;
+    width: 583px;
+    height: 472px;
+    
+    top: 269px;
+    right: 0px;
+}
+
+.PadPhotoOne {
+    position: absolute;
+    width: 536.52px;
+    height: 587.48px;
+    bottom: 0px;
+    left: 27px;
+}
+
+.PadPhotoTwo {
+    position: absolute;
+    width: 600px;
+    height: 493px;
+    
+    bottom: 0px;
+    right: 0px;
+}
+
+.PrinterPhoto {
+    position: absolute;
+    width: 761px;
+    height: 349px;
+    
+    bottom: 0px;
+    right: 340px;
+}
+
+.footer {
+    width: calc(100% - 118px);
+    height: 990px;
+    margin-top: 30px;
+    padding: 65px 59px;
+
+    background: #000000;
+
+
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center
+}
+
+.footerLogoBox {
+    width: 464px;
+    height: 110px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerLogoBox hr {
+    width: 100%;
+    color: white;
+}
+
+.footerLogo {
+    width: 336.64px;
+    height: 95.87px;
+}
+
+.footerInformation {
+    width: 100%;
+    height: 185px;
+    margin: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerInformation h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    margin: 0;
+    color: #FFFFFF;
+    
+}
+
+.footerInformation p, .phoneNumber {
+    font-family: Inter-light !important;
+    font-style: normal!important;
+    font-weight: 300!important;
+    font-size: 28px!important;
+    line-height: 34px!important;
+    margin: 0!important;
+    color: #FFFFFF!important;
+    text-decoration: none !important;
+
+}
+
+.footerInformation a {
+    font-family: Inter-extralight;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    margin: 0;
+    color: #FFFFFF;
+
+}
+
+.location {
+    height: 100%;
+    display: grid;
+
+    gap: 15px 18px;
+
+    grid-template-areas: ". label" "IconOne AdressOne" "IconTwo AdressTwo";
+    align-items: center;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workHours {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2,auto);
+    gap: 10px 20px;
+}
+
+.socialNets {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialNet {
+    width: 38px;
+    height: 38px;
+}
+
+.socialNet:hover {
+    background-color: var(--mainColor--);
+    transition: all 0.5s;
+    transform: scale(1.3, 1.3);
+}
+
+.contacts {
+    height: 100%;
+    display: grid;
+
+    gap: 15px 18px;
+
+    grid-template-areas: ". label" "IconOne ContactOne" "IconTwo ContactTwo";
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.map {
+    width: 100%;
+    height: 443px;
+    z-index: 11;
+}
+

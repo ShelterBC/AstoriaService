@@ -1,0 +1,28 @@
+
+.slider__item {
+    width: 100%;
+    max-height: 519px;
+  
+  }
+  /* Слайдер */
+  .slick-slider{
+    width: 100%;
+    max-height: 519px;
+  }
+  
+  /* Ограничивающая оболочка */
+  .slick-list {
+    width: 100%;
+    max-height: 519px;
+    overflow: hidden;
+  
+  }
+  /* Лента слайдов */
+  .slick-track{
+    display: flex;
+  }
+  
+  
+  
+  
+  
