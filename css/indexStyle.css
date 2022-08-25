@@ -45,30 +45,50 @@ html,body {
     padding: 0;
     margin: 0;
     border: 0;
+
+    --regularWidth--:100%;
+
     --mainColor--: #006E36;
+    --headerHeight-- : 140px;
+    --logoHeight-- : 90px;
+    --logoWidth-- : 458px;
+    --logoLeft-- : 40%;
+
+    --textDecorationBorderRight--: 30%;
+
+    --mainSliderheight--: 519px;
+    --serviceBoxHeight--: 741px;
 }
 
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 140px;
+    height: var(--headerHeight--);
     background-color: black;
 }
-
+/*
 .headerLogo {
     position: absolute;
-    width: 408px;
-    height: 89px;
-    left: 580px;
+    width: var(--logoWidth--);
+    height: var(--logoHeight--);
+    left: calc(var());
     top: 25px;
+}*/
+
+.headerLogo {
+    width: var(--logoWidth--);
+    height: var(--logoHeight--);
 }
 
 .navigation {
     position: sticky;
     top:0;
-    width: calc(100% - 200px);
+    width: calc(100% - 150px);
     height: 63px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
     background: #1D1D1D;
     color: #FFFFFF;
 
@@ -98,18 +118,18 @@ html,body {
     color: var(--mainColor--);
 }
 
-.mainSlider {
+.mainSlider{
     position: absolute;
     top:203px;
-    width: 100%;
+    width: var(--regularWidth--);
     height: 519px;
 }
 
 .mainSliderDecoration {
     position: absolute;
 	width: 770px;
-	border-top: 519px solid rgba(0, 0, 0, 0.68);; 
-	border-right: 420px solid transparent;	
+	border-top: var(--mainSliderheight--) solid rgba(0, 0, 0, 0.68);
+	border-right: var(--textDecorationBorderRight--) solid transparent;	
     z-index: 1;
 }
 
@@ -133,6 +153,7 @@ html,body {
     font-weight: 800;
     font-size: 62px;
     line-height: 75px;
+    
 
     color: #FFFFFF;
 }
@@ -158,7 +179,6 @@ html,body {
 
     align-items: center;
 
-    height: 64px;
 }
 
 .mainSliderIcon {
@@ -185,6 +205,8 @@ html,body {
     font-weight: 600;
     font-size: 48px;
     line-height: 58px;
+
+    text-align: center;
 
     margin: 20px;
 
@@ -217,63 +239,68 @@ html,body {
 }
 
 
-.PCPhoto {
+/*.PCPhoto {
     position: absolute;
-    width: 750px;
-    height: 542px;
-    top: 199px;
-    right: 243px;
+    width: 52%;
+    height: 495px;
+    bottom: 0;
+    left: 31%;
 }
+*/
 
+.pcPhoto {
+    position: absolute;
+    bottom: 0;
+    width: 52%;
+    height: 65%;
+    overflow: hidden;
+}
 .LaptopPhoto {
     position: absolute;
-    width: 1200px;
-    height: 457px;
-    top: 283px;
-    right: 120px;
+    bottom: 0;
+    width: 84%;
+    height: 61%;
+}
+
+.phones, .pads {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
 }
 
 .PhonePhotoOne {
-    position: absolute;
-    width: 577px;
-    height: 535px;
-    top: 206px;
-    left: 5px;
+
+    width: 36.8%;
+    height: 500px;
 }
 
 .PhonePhotoTwo {
-    position: absolute;
-    width: 583px;
-    height: 472px;
+
+    width: 36.9%;
+    height: 502px;
     
-    top: 269px;
-    right: 0px;
 }
 
 .PadPhotoOne {
-    position: absolute;
-    width: 536.52px;
-    height: 587.48px;
-    bottom: 0px;
-    left: 27px;
+    width: 34.7%;
+    height: 525px;
 }
 
 .PadPhotoTwo {
-    position: absolute;
-    width: 600px;
-    height: 493px;
+    width: 38.88%;
+    height: 470px;
     
-    bottom: 0px;
-    right: 0px;
 }
 
 .PrinterPhoto {
-    position: absolute;
     width: 761px;
     height: 349px;
-    
-    bottom: 0px;
-    right: 340px;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer {
@@ -307,8 +334,13 @@ html,body {
 }
 
 .footerLogo {
-    width: 336.64px;
-    height: 95.87px;
+    width: 72.5%;
+    height: 86.3%;
+}
+
+.footerIcon {
+    width: 50px;
+    height: 50px;
 }
 
 .footerInformation {
@@ -361,7 +393,7 @@ html,body {
 
     gap: 15px 18px;
 
-    grid-template-areas: ". label" "IconOne AdressOne" "IconTwo AdressTwo";
+    grid-template-areas: ". label" "IconOne AdressTwo" "IconTwo AdressOne";
     align-items: center;
 }
 
@@ -390,10 +422,12 @@ html,body {
     justify-content: space-between;
 }
 
-.socialNet {
+.socialNetIcon {
     width: 38px;
     height: 38px;
 }
+
+
 
 .socialNet:hover {
     background-color: var(--mainColor--);
@@ -422,3 +456,193 @@ html,body {
     z-index: 11;
 }
 
+
+@media only screen  and (max-width: 1150px) {
+    .navigation {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+
+@media only screen  and (max-width: 1024px) {
+    .navigation {
+        font-size: 12px;
+        line-height: 13px;
+
+        width: calc(100% - 50px);
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .pcPhoto {
+        width: 70%;
+    }
+
+    .LaptopPhoto {
+        width: 90%;
+    }
+
+    .PhonePhotoOne {
+        width: 47%;
+        height: 480px;
+    }
+
+    .PhonePhotoTwo {
+        width: 40%;
+        height: 420px;
+    }
+
+    .PadPhotoOne {
+        width: 42%;
+    }
+    .PadPhotoTwo {
+        width: 40%;
+        height: 470px;
+    }
+    .PrinterPhoto {
+        width: 615px;
+        height: 300px;
+    }
+    .footer {
+        padding: 65px 35px;
+        width: calc(100% - 70px);
+    }
+    .footerIcon, .socialNetIcon {
+        width: 32px;
+        height: 32px;
+    }
+    .footerInformation h3 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .footerInformation p, .phoneNumber {
+        font-size: 20px!important;
+        line-height: 25px!important;
+    }
+    .footerInformation a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .contact, .location  {
+        align-items: center;
+        gap: 10px 5px;
+    }
+    .contacts {
+        gap: 10px 5px;
+    }
+    .workHours {
+        gap: 10px 5px;
+    }
+
+}
+
+@media only screen  and (max-width: 850px) {
+    .navigation {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@media only screen  and (max-width: 768px) {
+    body {
+        --mainSliderheight--: 450px;
+
+        --headerHeight--: 120px;
+        --logoHeight--: 70px;
+        --logoWidth--: 358px;
+    }
+    .navigation {
+        width: 100%;
+        padding: 0;
+    }
+    .mainSliderTextBox h1 {
+        margin: 0;
+        margin-bottom: 40px;
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .mainSlider p {
+        font-size: 35px;
+        line-height: 65px;
+    }
+    .mainSlider{
+        position: absolute;
+        top:183px;
+    }
+
+    .serviceBox {
+        height: 580px;
+    }
+    .serviceBox h2 {
+        font-size: 43px;
+        line-height: 53px;
+    }
+    .serviceBox p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .serviceBox a {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 12px;
+    }
+
+    .LaptopPhoto {
+
+        height: 55%;
+    }
+
+    .PhonePhotoOne {
+        width: 47%;
+        height: 350px;
+    }
+
+    .PhonePhotoTwo {
+        width: 40%;
+        height: 340px;
+    }
+    .PadPhotoOne {
+        width: 42%;
+        height: 390px;
+    }
+    .PadPhotoTwo {
+        width: 40%;
+        height: 340px;
+    }
+    .PrinterPhoto {
+        width: 515px;
+        height: 260px;
+    }
+    .footerLogoBox {
+        width: 380px;
+        height: 90px;
+    }
+    .footer {
+        padding: 35px 15px;
+        width: calc(100% - 30px);
+    }
+
+    .footerIcon, .socialNetIcon {
+        width: 28px;
+        height: 28px;
+    }
+    .footerInformation h3 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .footerInformation p, .phoneNumber {
+        font-size: 17px!important;
+        line-height: 22px!important;
+    }
+    .footerInformation a {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .contacts {
+        gap: 10px 5px;
+    }
+    .workHours {
+        gap: 10px 5px;
+    }
+}
