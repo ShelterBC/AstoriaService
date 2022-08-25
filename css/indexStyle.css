@@ -756,6 +756,8 @@ html,body {
 
     body {
         --mainSliderheight--: 380px;
+        --logoHeight--: 55px;
+        --logoWidth--: 300px;
     }
 
     .mainSliderTextBox {
@@ -802,6 +804,16 @@ html,body {
         width: 345px;
         height: 180px;
         bottom: 50px;
+    }
+
+    .navigation {
+        font-size: 5px;
+        line-height: 7px;
+    }
+
+    .footerLogoBox {
+        width: 320px;
+        height: 90px;
     }
 
 }
