@@ -68,14 +68,7 @@ html,body {
     height: var(--headerHeight--);
     background-color: black;
 }
-/*
-.headerLogo {
-    position: absolute;
-    width: var(--logoWidth--);
-    height: var(--logoHeight--);
-    left: calc(var());
-    top: 25px;
-}*/
+
 
 .headerLogo {
     width: var(--logoWidth--);
@@ -285,6 +278,13 @@ html,body {
     
 }
 
+.PhonePhotoThree {
+    display: none;
+    width: 325px;
+    height: 410px;
+    
+}
+
 .PadPhotoOne {
     width: 34.7%;
     height: 525px;
@@ -293,6 +293,13 @@ html,body {
 .PadPhotoTwo {
     width: 38.88%;
     height: 470px;
+    
+}
+
+.PadPhotoThree {
+    width: 400px;
+    height: 400px;
+    display: none;
     
 }
 
@@ -542,6 +549,23 @@ html,body {
         font-size: 10px;
         line-height: 12px;
     }
+    .contact, .location {
+        align-items: center;
+        gap: 0px 5px;
+    }
+    .footerInformation {
+        height: 130px;
+        margin: 60px 0px;
+    }
+    .socialNetIcon {
+        width: 28px;
+        height: 28px;
+    }
+    .LaptopPhoto {
+
+        height: 55%;
+    }
+
 }
 
 @media only screen  and (max-width: 768px) {
@@ -553,8 +577,8 @@ html,body {
         --logoWidth--: 358px;
     }
     .navigation {
-        width: 100%;
-        padding: 0;
+        width: calc(100% - 10px);
+        padding: 0 5px;
     }
     .mainSliderTextBox h1 {
         margin: 0;
@@ -569,6 +593,7 @@ html,body {
     .mainSlider{
         position: absolute;
         top:183px;
+        height: 450px;
     }
 
     .serviceBox {
@@ -587,28 +612,36 @@ html,body {
         line-height: 22px;
         margin: 12px;
     }
-
-    .LaptopPhoto {
-
-        height: 55%;
-    }
-
     .PhonePhotoOne {
         width: 47%;
         height: 350px;
+        display: none;
     }
 
     .PhonePhotoTwo {
         width: 40%;
         height: 340px;
+        display: none;
+    }
+    .PhonePhotoThree {
+        display: block;
+    }
+    .phones, .pads {
+        justify-content: center;
     }
     .PadPhotoOne {
         width: 42%;
         height: 390px;
+        display: none;
     }
     .PadPhotoTwo {
         width: 40%;
         height: 340px;
+        display: none;
+    }
+
+    .PadPhotoThree {
+        display: block;
     }
     .PrinterPhoto {
         width: 515px;
@@ -640,9 +673,135 @@ html,body {
         line-height: 14px;
     }
     .contacts {
-        gap: 10px 5px;
+        gap: 5px 5px;
     }
     .workHours {
-        gap: 10px 5px;
+        gap: 5px 5px;
     }
+}
+
+@media only screen  and (max-width: 640px) {
+    .mainSliderTextBox {
+        left: 20px;
+        font-size: 50px;
+        width: 350px;
+    }
+    .mainSliderTextBox h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .mainSlider p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .mainSliderIcon {
+        width: 48px;
+        height: 48px;
+    }
+    .serviceBox h2 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .serviceBox p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .serviceBox a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .PrinterPhoto {
+        width: 415px;
+        height: 220px;
+        bottom: 50px;
+    }
+    .footer {
+        height: 1100px;
+    }
+    .footerInformation {
+        flex-direction: column;
+        height: 500px;
+        width: 230px;
+        margin: 20px 0px;
+    }
+    .contacts {
+        order: 1;
+        grid-template-columns: 30px 200px;
+        gap: 0 5px;
+        grid-template-areas: "label label" "IconOne ContactOne" "IconTwo ContactTwo";
+        
+    }
+    .location {
+        order: 2;
+        grid-template-areas: "label label" "IconOne AdressTwo" "IconTwo AdressOne";
+    }
+    .schedule{
+        order: 3;
+    }
+    .contacts, .location, .schedule {
+        height: 150px;
+    }
+    .contact {
+        align-items: flex-start;
+    }
+    .workHours {
+        gap: 10px 30px;
+    }
+    .socialNets {
+        justify-content: space-around;
+    }
+}
+
+@media only screen  and (max-width: 427px) {
+
+    body {
+        --mainSliderheight--: 380px;
+    }
+
+    .mainSliderTextBox {
+        top: 10px
+    }
+
+    .mainSlider {
+        height: 380px;
+    }
+
+    .serviceBox h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .serviceBox p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .serviceBox a {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .serviceBox {
+        height: 450px;
+    }
+
+    .pcPhoto {
+        width: 85%;
+    }
+
+    .PhonePhotoThree {
+        width: 280px;
+        height: 310px;
+    }
+
+    .PadPhotoThree {
+        width: 320px;
+        height: 320px;
+    }
+
+    .PrinterPhoto {
+        width: 345px;
+        height: 180px;
+        bottom: 50px;
+    }
+
 }
