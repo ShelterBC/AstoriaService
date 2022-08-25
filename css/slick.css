@@ -38,6 +38,23 @@
     
     }
 }
+
+@media only screen  and (max-width: 427px) {
+  .slider__item {
+    max-height: 380px;
+  
+  }
+  /* Слайдер */
+  .slick-slider{
+    max-height: 380px;
+  }
+  
+  /* Ограничивающая оболочка */
+  .slick-list {
+    max-height: 380px;
+  
+  }
+}
   
   
   
