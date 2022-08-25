@@ -34,7 +34,7 @@
     </div>
     <div class="mainSlider" id = "#mainSlider">
         <div class="mainSliderTextBox">
-            <h1>Ремонт техніки в Білій Церкві</h1>
+            <h1>Ремонт техніки<br>в Білій Церкві</h1>
             <div class="mainSliderAchives">
                 <img class = "mainSliderIcon" src="media/icons/speed.png" alt="speed" >
                 <p>Оперативно</p>
@@ -76,6 +76,7 @@
         <div class="phones">
             <img src="media/PhoneOne.png" width="100%" height="100%" alt = "pc" class="PhonePhotoOne">
             <img src="media/PhoneTwo.png" width="100%" height="100%" alt = "pc" class="PhonePhotoTwo">
+            <img src="media/PhoneThree.png" width="100%" height="100%" alt = "pc" class="PhonePhotoThree">
         </div>
     </div>
 
@@ -87,6 +88,7 @@
         <div class="pads">
             <img src="media/padOne.png" width="100%" height="100%" alt = "pc" class="PadPhotoOne">
             <img src="media/PadTwo.png" width="100%" height="100%" alt = "pc" class="PadPhotoTwo">
+            <img src="media/PadThree.png" width="100%" height="100%" alt = "pc" class="PadPhotoThree">
         </div>
     </div>
 
@@ -109,14 +111,14 @@
         </div>
         <div class="footerInformation">
             <div class="location">
-                <h3 style=" grid-area: label;">Наші відділення</h3>
+                <h3 style=" grid-area: label; align-self: flex-start;">Наші відділення</h3>
                 <img src="media/icons/location.png" class="footerIcon" style=" grid-area: IconOne;">
                 <div class="adress" style=" grid-area: AdressOne;">
                     <p>вул. С Наливайка, 24</p>
                     <a>(поряд Нова пошта № 12)</a>
                 </div>
                 <img src="media/icons/location.png" class="footerIcon" style=" grid-area: IconTwo;">
-                <div class="adress" style=" grid-area: AdressTwo;">
+                <div class="adress" style=" grid-area: AdressTwo; ">
                     <p>вул. Леваневського, 49</p>
                     <a>(поряд Нова пошта № 3)</a>
                 </div>
@@ -136,7 +138,7 @@
                 </div>
             </div>
             <div class="contacts">
-                <h3 style=" grid-area: label;">Контакти</h3>
+                <h3 style=" grid-area: label; align-self: flex-start;">Контакти</h3>
                 <img src="media/icons/phone.png" class="footerIcon" style=" grid-area: IconOne;">
                 <div class="contact" style=" grid-area: ContactOne;">
                     <a class="phoneNumber" href="tel:+380966212425">+38 (096) 621 24 25</a>
@@ -192,9 +194,13 @@
     <script>
         var item = parseInt($('.mainSlider').css('width'));
         console.log($('body').css('--textDecorationBorderRight--'));
-        $('.mainSliderDecoration').css('width', item* 0.535 + 'px');
+        if(item > 425) {
+            $('.mainSliderDecoration').css('width', item* 0.535 + 'px');
         
-        $('body').css('--textDecorationBorderRight--', item* 0.3 + 'px')
+            $('body').css('--textDecorationBorderRight--', item* 0.3 + 'px')
+        } else {
+            $('.mainSliderDecoration').css('width', item* 0.85 + 'px');
+        }
     </script>
 </body>
 </html>
