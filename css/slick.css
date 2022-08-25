@@ -21,6 +21,23 @@
   .slick-track{
     display: flex;
   }
+
+  @media only screen  and (max-width: 768px) {
+    .slider__item {
+      max-height: 450px;
+    
+    }
+    /* Слайдер */
+    .slick-slider{
+      max-height: 450px;
+    }
+    
+    /* Ограничивающая оболочка */
+    .slick-list {
+      max-height: 450px;
+    
+    }
+}
   
   
   
