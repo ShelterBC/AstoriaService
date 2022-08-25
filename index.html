@@ -1,648 +1,200 @@
-@font-face {
-    font-family: Inter;
-    src: url("../fonts/Inter-Regular.otf");
-    font-display: swap;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-@font-face {
-    font-family: Inter-medium;
-    src: url("../fonts/Inter-Medium.otf");
-    font-display: swap;
-}
+    <link rel = "stylesheet" href = "css/slick.css" type = "text/css">
+    <link rel = "stylesheet" href = "css/indexStyle.css" type = "text/css">
+    <title>Сервісний центр Astoria</title>
+</head>
+<body>
+    <div class="header">
+        <img class="headerLogo" src="media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
+    </div>
 
-@font-face {
-    font-family: Inter-semibold;
-    src: url("../fonts/Inter-SemiBold.otf");
-    font-display: swap;
-}
+    <div class="navigation">
+            <a href="ddd">РЕМОНТ КОМП’ЮТЕРІВ</a>
+            <span>|</span>
+            <a>РЕМОНТ НОУТБУКІВ </a>
+            <span>|</span>
+            <a>РЕМОНТ СМАРТФОНІВ</a>
+            <span>|</span>
+            <a>РЕМОНТ ПЛАНШЕТІВ</a>
+            <span>|</span>
+            <a>РЕМОНТ ПРИНТЕРІВ</a>
+            <span>|</span>
+            <a href = "#footer">КОНТАКТИ</a>
+    </div>
+    <div class="slick-slider">
+        <div><img src="media/SliderItem1.png" width="100%" height="519px"></div>
+        <div><img src="media/SliderItem2.jpg" width="100%" height="519px"></div>
+        <div><img src="media/SliderItem3.jpg" width="100%" height="519px"></div>
+    </div>
+    <div class="mainSlider" id = "#mainSlider">
+        <div class="mainSliderTextBox">
+            <h1>Ремонт техніки в Білій Церкві</h1>
+            <div class="mainSliderAchives">
+                <img class = "mainSliderIcon" src="media/icons/speed.png" alt="speed" >
+                <p>Оперативно</p>
+                <img class = "mainSliderIcon" src="media/icons/cheep.png" alt="speed" >
+                <p>Доступно</p>
+                <img class = "mainSliderIcon" src="media/icons/safe.png" alt="speed" >
+                <p>Надійно</p>
+            </div>
+        </div>
+        <div class="mainSliderDecoration"></div>
+        </div>
+    </div>
 
-@font-face {
-    font-family: Inter-bold;
-    src: url("../fonts/Inter-Bold.otf");
-    font-display: swap;
-}
+    <div class="serviceBox">
+        <h2>Ремонт та модернізація PC</h2>
+        <p>Надоїло чекати поки завантажеться сторінка в Інтернеті?<br>
+        Не працює комп’ютер?<br> Звертайся до нас</p>
+        <a>Детальніше ></a>
+        <div class="pcPhoto">
+            <img src="media/PC.png" width="100%" height="100%" alt = "pc" >
+        </div>
+    </div>
 
-@font-face {
-    font-family: Inter-extrabold;
-    src: url("../fonts/Inter-ExtraBold.otf");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Inter-light;
-    src: url("../fonts/Inter-Light.otf");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Inter-extralight;
-    src: url("../fonts/Inter-ExtraLight.otf");
-    font-display: swap;
-}
-
-
-html,body {
-    padding: 0;
-    margin: 0;
-    border: 0;
-
-    --regularWidth--:100%;
-
-    --mainColor--: #006E36;
-    --headerHeight-- : 140px;
-    --logoHeight-- : 90px;
-    --logoWidth-- : 458px;
-    --logoLeft-- : 40%;
-
-    --textDecorationBorderRight--: 30%;
-
-    --mainSliderheight--: 519px;
-    --serviceBoxHeight--: 741px;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: var(--headerHeight--);
-    background-color: black;
-}
-/*
-.headerLogo {
-    position: absolute;
-    width: var(--logoWidth--);
-    height: var(--logoHeight--);
-    left: calc(var());
-    top: 25px;
-}*/
-
-.headerLogo {
-    width: var(--logoWidth--);
-    height: var(--logoHeight--);
-}
-
-.navigation {
-    position: sticky;
-    top:0;
-    width: calc(100% - 150px);
-    height: 63px;
-    padding-left: 75px;
-    padding-right: 75px;
-    background: #1D1D1D;
-    color: #FFFFFF;
-
-
-    font-family: Inter-bold;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    z-index: 10;
-}
-
-
-.navigation a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.navigation a:hover {
-    cursor: pointer;
-    color: var(--mainColor--);
-}
-
-.mainSlider{
-    position: absolute;
-    top:203px;
-    width: var(--regularWidth--);
-    height: 519px;
-}
-
-.mainSliderDecoration {
-    position: absolute;
-	width: 770px;
-	border-top: var(--mainSliderheight--) solid rgba(0, 0, 0, 0.68);
-	border-right: var(--textDecorationBorderRight--) solid transparent;	
-    z-index: 1;
-}
-
-.mainSliderTextBox {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-
-    width: 500px;
-    left: 50px;
-    top: 28px;
-
-    align-items: flex-start;
-
-    z-index: 2;
-}
-
-.mainSliderTextBox h1 {
-    font-family: Inter-extrabold;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 62px;
-    line-height: 75px;
+    <div class="serviceBox">
+        <h2>Ремонт та чистка ноутбуків</h2>
+        <p>Шумить як ракета, а гріється як пічка?<br>
+            Поламався у найнепідходящий час? <br> Легко та швидко виправимо.</p>
+        <a>Детальніше ></a>
+        <div class="LaptopPhoto">
+            <img src="media/laptop.png" width="100%" height="100%" alt = "pc">
+        </div>
+    </div>
     
-
-    color: #FFFFFF;
-}
-
-.mainSliderTextBox p{
-    font-family: Inter-bold;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    margin: 0;
-    color: #FFFFFF;
-
-}
-
-.mainSliderAchives {
-    display: grid;
-
-    grid-template-columns: auto auto;
-    grid-template-rows: repeat(3, auto);
-
-    gap: 20px 40px;
-
-    align-items: center;
-
-}
-
-.mainSliderIcon {
-    width: 64px;
-    height: 64px;
-}
-
-.serviceBox {
-    position: relative;
-    width: 100%;
-    height: 741px;
-
-    margin-top: 30px;
-    background: #FBFBFB;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.serviceBox h2 {
-    font-family: Inter-semibold;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 58px;
-
-    text-align: center;
-
-    margin: 20px;
-
-    color: #000000;
-}
-
-.serviceBox p {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 34px;
-    text-align: center;
-    margin: 0;
-    color: #000000;
-}
-
-.serviceBox a {
-    font-family: Inter-light;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 31px;
-
-    margin: 19px;
-
-    color: #006E36;
-
-    text-decoration: none;
-}
-
-
-/*.PCPhoto {
-    position: absolute;
-    width: 52%;
-    height: 495px;
-    bottom: 0;
-    left: 31%;
-}
-*/
-
-.pcPhoto {
-    position: absolute;
-    bottom: 0;
-    width: 52%;
-    height: 65%;
-    overflow: hidden;
-}
-.LaptopPhoto {
-    position: absolute;
-    bottom: 0;
-    width: 84%;
-    height: 61%;
-}
-
-.phones, .pads {
-    display: flex;
-    width: 100%;
-    align-items: flex-end;
-    justify-content: space-between;
-    overflow: hidden;
-    position: absolute;
-    bottom: 0;
-}
-
-.PhonePhotoOne {
-
-    width: 36.8%;
-    height: 500px;
-}
-
-.PhonePhotoTwo {
-
-    width: 36.9%;
-    height: 502px;
-    
-}
-
-.PadPhotoOne {
-    width: 34.7%;
-    height: 525px;
-}
-
-.PadPhotoTwo {
-    width: 38.88%;
-    height: 470px;
-    
-}
-
-.PrinterPhoto {
-    width: 761px;
-    height: 349px;
-    position: absolute;
-    bottom: 0;
-}
-
-.footer {
-    width: calc(100% - 118px);
-    height: 990px;
-    margin-top: 30px;
-    padding: 65px 59px;
-
-    background: #000000;
-
-
-    position: relative;
-    display: flex;
-
-    flex-direction: column;
-    align-items: center
-}
-
-.footerLogoBox {
-    width: 464px;
-    height: 110px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footerLogoBox hr {
-    width: 100%;
-    color: white;
-}
-
-.footerLogo {
-    width: 72.5%;
-    height: 86.3%;
-}
-
-.footerIcon {
-    width: 50px;
-    height: 50px;
-}
-
-.footerInformation {
-    width: 100%;
-    height: 185px;
-    margin: 80px 0px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footerInformation h3 {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
-    margin: 0;
-    color: #FFFFFF;
-    
-}
-
-.footerInformation p, .phoneNumber {
-    font-family: Inter-light !important;
-    font-style: normal!important;
-    font-weight: 300!important;
-    font-size: 28px!important;
-    line-height: 34px!important;
-    margin: 0!important;
-    color: #FFFFFF!important;
-    text-decoration: none !important;
-
-}
-
-.footerInformation a {
-    font-family: Inter-extralight;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 24px;
-    text-decoration-line: underline;
-    margin: 0;
-    color: #FFFFFF;
-
-}
-
-.location {
-    height: 100%;
-    display: grid;
-
-    gap: 15px 18px;
-
-    grid-template-areas: ". label" "IconOne AdressTwo" "IconTwo AdressOne";
-    align-items: center;
-}
-
-.adress {
-    display: flex;
-    flex-direction: column;
-}
-
-.schedule {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.workHours {
-    display: grid;
-    grid-template: repeat(2, auto)/repeat(2,auto);
-    gap: 10px 20px;
-}
-
-.socialNets {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.socialNetIcon {
-    width: 38px;
-    height: 38px;
-}
-
-
-
-.socialNet:hover {
-    background-color: var(--mainColor--);
-    transition: all 0.5s;
-    transform: scale(1.3, 1.3);
-}
-
-.contacts {
-    height: 100%;
-    display: grid;
-
-    gap: 15px 18px;
-
-    grid-template-areas: ". label" "IconOne ContactOne" "IconTwo ContactTwo";
-    align-items: center;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-}
-
-.map {
-    width: 100%;
-    height: 443px;
-    z-index: 11;
-}
-
-
-@media only screen  and (max-width: 1150px) {
-    .navigation {
-        font-size: 14px;
-        line-height: 17px;
-    }
-}
-
-
-@media only screen  and (max-width: 1024px) {
-    .navigation {
-        font-size: 12px;
-        line-height: 13px;
-
-        width: calc(100% - 50px);
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .pcPhoto {
-        width: 70%;
-    }
-
-    .LaptopPhoto {
-        width: 90%;
-    }
-
-    .PhonePhotoOne {
-        width: 47%;
-        height: 480px;
-    }
-
-    .PhonePhotoTwo {
-        width: 40%;
-        height: 420px;
-    }
-
-    .PadPhotoOne {
-        width: 42%;
-    }
-    .PadPhotoTwo {
-        width: 40%;
-        height: 470px;
-    }
-    .PrinterPhoto {
-        width: 615px;
-        height: 300px;
-    }
-    .footer {
-        padding: 65px 35px;
-        width: calc(100% - 70px);
-    }
-    .footerIcon, .socialNetIcon {
-        width: 32px;
-        height: 32px;
-    }
-    .footerInformation h3 {
-        font-size: 25px;
-        line-height: 32px;
-    }
-    .footerInformation p, .phoneNumber {
-        font-size: 20px!important;
-        line-height: 25px!important;
-    }
-    .footerInformation a {
-        font-size: 12px;
-        line-height: 16px;
-    }
-    .contact, .location  {
-        align-items: center;
-        gap: 10px 5px;
-    }
-    .contacts {
-        gap: 10px 5px;
-    }
-    .workHours {
-        gap: 10px 5px;
-    }
-
-}
-
-@media only screen  and (max-width: 850px) {
-    .navigation {
-        font-size: 10px;
-        line-height: 12px;
-    }
-}
-
-@media only screen  and (max-width: 768px) {
-    body {
-        --mainSliderheight--: 450px;
-
-        --headerHeight--: 120px;
-        --logoHeight--: 70px;
-        --logoWidth--: 358px;
-    }
-    .navigation {
-        width: 100%;
-        padding: 0;
-    }
-    .mainSliderTextBox h1 {
-        margin: 0;
-        margin-bottom: 40px;
-        font-size: 55px;
-        line-height: 70px;
-    }
-    .mainSlider p {
-        font-size: 35px;
-        line-height: 65px;
-    }
-    .mainSlider{
-        position: absolute;
-        top:183px;
-    }
-
-    .serviceBox {
-        height: 580px;
-    }
-    .serviceBox h2 {
-        font-size: 43px;
-        line-height: 53px;
-    }
-    .serviceBox p {
-        font-size: 18px;
-        line-height: 24px;
-    }
-    .serviceBox a {
-        font-size: 16px;
-        line-height: 22px;
-        margin: 12px;
-    }
-
-    .LaptopPhoto {
-
-        height: 55%;
-    }
-
-    .PhonePhotoOne {
-        width: 47%;
-        height: 350px;
-    }
-
-    .PhonePhotoTwo {
-        width: 40%;
-        height: 340px;
-    }
-    .PadPhotoOne {
-        width: 42%;
-        height: 390px;
-    }
-    .PadPhotoTwo {
-        width: 40%;
-        height: 340px;
-    }
-    .PrinterPhoto {
-        width: 515px;
-        height: 260px;
-    }
-    .footerLogoBox {
-        width: 380px;
-        height: 90px;
-    }
-    .footer {
-        padding: 35px 15px;
-        width: calc(100% - 30px);
-    }
-
-    .footerIcon, .socialNetIcon {
-        width: 28px;
-        height: 28px;
-    }
-    .footerInformation h3 {
-        font-size: 20px;
-        line-height: 27px;
-    }
-    .footerInformation p, .phoneNumber {
-        font-size: 17px!important;
-        line-height: 22px!important;
-    }
-    .footerInformation a {
-        font-size: 10px;
-        line-height: 14px;
-    }
-    .contacts {
-        gap: 10px 5px;
-    }
-    .workHours {
-        gap: 10px 5px;
-    }
-}
+    <div class="serviceBox">
+        <h2>Ремонт смартфонів</h2>
+        <p>Наші майстри ремонтують 95% техніки.<br>
+            Проводимо роботи різної складності.</p>
+        <a href="ddd">Детальніше ></a>
+        <div class="phones">
+            <img src="media/PhoneOne.png" width="100%" height="100%" alt = "pc" class="PhonePhotoOne">
+            <img src="media/PhoneTwo.png" width="100%" height="100%" alt = "pc" class="PhonePhotoTwo">
+        </div>
+    </div>
+
+    <div class="serviceBox">
+        <h2>Ремонт планшетів</h2>
+        <p>Виконуємо ремонти від яких відмовляються<br>
+            інші сервіси.</p>
+        <a href="ddd">Детальніше ></a>
+        <div class="pads">
+            <img src="media/PadOne.png" width="100%" height="100%" alt = "pc" class="PadPhotoOne">
+            <img src="media/PadTwo.png" width="100%" height="100%" alt = "pc" class="PadPhotoTwo">
+        </div>
+    </div>
+
+
+    <div class="serviceBox">
+        <h2>Ремонт принтерів.<br>Заправка картриджів.</h2>
+        <p>Ремонтуємо 99% існуючих принтерів.<br>
+            Зпрарявляємо лазерні картриджі.</p>
+        <a href="ddd">Детальніше ></a>
+        <div class="PrinterPhoto">
+            <img src="media/printer.png" width="100%" height="100%" alt = "pc">
+        </div>
+    </div>
+
+    <div class="footer" name = "footer">
+        <div class="footerLogoBox">
+            <a name = "footer"></a>
+            <img src="media/footerLogo.png" width="100%" height="100%" class="footerLogo" alt="logo">
+            <hr>
+        </div>
+        <div class="footerInformation">
+            <div class="location">
+                <h3 style=" grid-area: label;">Наші відділення</h3>
+                <img src="media/icons/location.png" class="footerIcon" style=" grid-area: IconOne;">
+                <div class="adress" style=" grid-area: AdressOne;">
+                    <p>вул. С Наливайка, 24</p>
+                    <a>(поряд Нова пошта № 12)</a>
+                </div>
+                <img src="media/icons/location.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <div class="adress" style=" grid-area: AdressTwo;">
+                    <p>вул. Леваневського, 49</p>
+                    <a>(поряд Нова пошта № 3)</a>
+                </div>
+            </div>
+            <div class="schedule">
+                <h3>Графік роботи</h3>
+                <div class="workHours">
+                    <p>Будні</p>
+                    <p style="justify-self:end">10:00 - 18:00</p>
+                    <p>Сб, Нд</p>
+                    <p style="justify-self:end">Вихідні</p>
+                </div>
+                <div class="socialNets">
+                    <a href="https://www.instagram.com/astoriaservice/"><img src="media/icons/instagramm.png" class="socialNetIcon"></a>
+                    <a href="https://www.facebook.com/astoriaService/"><img src="media/icons/facebook.png" class="socialNetIcon"></a>
+                    <a href="https://telegram.me/astoriaService"><img src="media/icons/telegram.png" class="socialNetIcon"></a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3 style=" grid-area: label;">Контакти</h3>
+                <img src="media/icons/phone.png" class="footerIcon" style=" grid-area: IconOne;">
+                <div class="contact" style=" grid-area: ContactOne;">
+                    <a class="phoneNumber" href="tel:+380966212425">+38 (096) 621 24 25</a>
+                    <a>Замовити зворотній дзвінок</a>
+                </div>
+                <img src="media/icons/phone.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <div class="contact" style=" grid-area: ContactTwo;">
+                    <a class="phoneNumber" href="tel:+380932652763">+38 (093) 265 27 63</a>
+                    <a>Замовити зворотній дзвінок</a>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="map">
+
+        </div>
+    </div>
+
+    <script>
+        var locationOne = {lat: 49.7993871, lng: 30.1168922}
+        var locationTwo = {lat: 49.7871995, lng: 30.1488960}
+        var center = {lat: 49.7912728, lng: 30.1305992}
+        function initMap () {
+          var opt =  {
+            center: center,
+            zoom: 14
+          }
+          var mymap = new google.maps.Map(document.getElementById("map"), opt);
+          var marker = new google.maps.Marker({
+            position: locationOne, map:mymap
+          });
+          var marker = new google.maps.Marker({
+            position: locationTwo, map:mymap
+          });
+        }
+    </script>
+
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.slick-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            zIndex: 0,
+        });
+    });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm_pREHVrknzLJWvoLNiAlRmSshKoSuL8&callback=initMap" async defer></script>
+
+    <script>
+        var item = parseInt($('.mainSlider').css('width'));
+        console.log($('body').css('--textDecorationBorderRight--'));
+        $('.mainSliderDecoration').css('width', item* 0.535 + 'px');
+        
+        $('body').css('--textDecorationBorderRight--', item* 0.3 + 'px')
+    </script>
+</body>
+</html>
