@@ -221,24 +221,11 @@
         
             $('body').css('--textDecorationBorderRight--', item* 0.3 + 'px')
         } else {
-            $('.mainSliderDecoration').css('width', item* 0.85 + 'px');
+            $('.mainSliderDecoration').css('width', item + 'px');
         }
     </script>
 
     <script>
-        /*
-        function sideSliderControl() {
-            if(parseInt($('.sidenav').css('height')) == 0) {
-                document.getElementById("side").style.height = "250px";
-                $('body').css('overflow', 'hidden');
-            } else {
-                document.getElementById("side").style.height = "0px";
-                $('body').css('overflow', 'visible');
-            }
-        }*/
-
-
-
 
         function sideSliderControl() {
             if(parseInt($('.sidenav').css('height')) == 0) {
