@@ -938,7 +938,7 @@ html,body {
 
 }
 
-@media only screen  and (max-width: 377px) {
+@media only screen  and (max-width: 385px) {
     .serviceBox h2 {
         font-size: 22px;
         line-height: 25px;
