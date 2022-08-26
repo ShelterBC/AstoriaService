@@ -49,6 +49,7 @@ html,body {
     --regularWidth--:100%;
 
     --mainColor--: #006E36;
+    --Gray--: #1D1D1D;
     --headerHeight-- : 140px;
     --logoHeight-- : 90px;
     --logoWidth-- : 458px;
@@ -100,13 +101,92 @@ html,body {
     z-index: 10;
 }
 
+.mobileNavigation {
+    height: 38px;
+    background: #1D1D1D;
+    color: #FFFFFF;
 
-.navigation a {
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: hidden;
+    transition: 0.9s;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.list {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 3.52941em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 664px;
+    margin: 0 auto;
+    padding: 45px 40px 8px;
+    height: auto;
+}
+
+.list hr, .mobileNavigation hr {
+    content: '';
+    display: block;
+    width: 584px;
+    height: 1px;
+    background: #424245;
+    border: 0;
+    margin-inline-start: 0;
+}
+
+.mobileNavigation hr {
+    width: 100%;
+    margin-inline-start: auto;
+}
+
+.mobileNavigationIcon {
+    width: 26px;
+    height: 26px;
+}
+
+.mobileNavigation button {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    left: 0;
+    background: #1D1D1D;
+    padding: 0;
+    border: 0;
+}
+
+.sidenav {
+    height: 0;
+    width: 100%;
+    position: sticky;
+    z-index: 100;
+    top: 38px;
+    left: 0;
+    background-color: #111;
+    overflow-y: hidden;
+    transition: visibility 0s linear 1s;
+}
+
+
+
+.navigation, .mobileNavigation a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.navigation a:hover {
+.navigation,  a:hover {
     cursor: pointer;
     color: var(--mainColor--);
 }
@@ -231,15 +311,6 @@ html,body {
     text-decoration: none;
 }
 
-
-/*.PCPhoto {
-    position: absolute;
-    width: 52%;
-    height: 495px;
-    bottom: 0;
-    left: 31%;
-}
-*/
 
 .pcPhoto {
     position: absolute;
@@ -572,11 +643,18 @@ html,body {
     body {
         --mainSliderheight--: 450px;
 
-        --headerHeight--: 120px;
-        --logoHeight--: 70px;
-        --logoWidth--: 358px;
+        --headerHeight--: 90px;
+        --logoHeight--: 50px;
+        --logoWidth--: 270px;
+    }
+    .mobileNavigation {
+        display: flex;
+        position: sticky;
+        top: -1px;
+        z-index: 10;
     }
     .navigation {
+        display: none;
         width: calc(100% - 10px);
         padding: 0 5px;
     }
@@ -592,7 +670,7 @@ html,body {
     }
     .mainSlider{
         position: absolute;
-        top:183px;
+        top: 128px;
         height: 450px;
     }
 
@@ -699,7 +777,7 @@ html,body {
         height: 48px;
     }
     .serviceBox h2 {
-        font-size: 33px;
+        font-size: 35px;
         line-height: 42px;
     }
     .serviceBox p {
