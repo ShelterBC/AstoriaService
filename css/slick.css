@@ -2,12 +2,14 @@
 .slider__item {
     width: 100%;
     max-height: 519px;
+    position: relative;
   
   }
   /* Слайдер */
   .slick-slider{
     width: 100%;
     max-height: 519px;
+    position: relative;
   }
   
   /* Ограничивающая оболочка */
@@ -15,11 +17,13 @@
     width: 100%;
     max-height: 519px;
     overflow: hidden;
+    position: relative;
   
   }
   /* Лента слайдов */
   .slick-track{
     display: flex;
+    position: relative;
   }
 
   @media only screen  and (max-width: 768px) {
@@ -55,6 +59,24 @@
   
   }
 }
+
+@media only screen  and (max-width: 377px) {
+  .slider__item {
+    max-height: 350px;
+  
+  }
+  /* Слайдер */
+  .slick-slider{
+    max-height: 350px;
+  }
+  
+  /* Ограничивающая оболочка */
+  .slick-list {
+    max-height: 350px;
+  
+  }
+}
+
   
   
   
