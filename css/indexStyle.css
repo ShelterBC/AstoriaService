@@ -106,6 +106,12 @@ html,body {
     background: #1D1D1D;
     color: #FFFFFF;
 
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
     display: none;
     align-items: flex-start;
     flex-direction: column;
@@ -352,8 +358,7 @@ html,body {
 .PhonePhotoThree {
     display: none;
     width: 325px;
-    height: 410px;
-    
+    height: 380px; 
 }
 
 .PadPhotoOne {
@@ -370,8 +375,7 @@ html,body {
 .PadPhotoThree {
     width: 400px;
     height: 400px;
-    display: none;
-    
+    display: none; 
 }
 
 .PrinterPhoto {
@@ -633,10 +637,9 @@ html,body {
         height: 28px;
     }
     .LaptopPhoto {
-
-        height: 55%;
+        width: 640px;
+        height: 250px;
     }
-
 }
 
 @media only screen  and (max-width: 768px) {
@@ -675,7 +678,7 @@ html,body {
     }
 
     .serviceBox {
-        height: 580px;
+        height: 530px;
     }
     .serviceBox h2 {
         font-size: 43px;
@@ -733,6 +736,11 @@ html,body {
         padding: 35px 15px;
         width: calc(100% - 30px);
     }
+    .LaptopPhoto {
+        width: 640px;
+        height: 280px;
+        bottom: 40px;
+    }
 
     .footerIcon, .socialNetIcon {
         width: 28px;
@@ -756,9 +764,23 @@ html,body {
     .workHours {
         gap: 5px 5px;
     }
+    .pcPhoto {
+        width: 425px;
+        height: 335px;
+    }
+    .PhonePhotoThree {
+        height: 360px; 
+    }
+    .PadPhotoThree {
+        height: 360px;
+    }
 }
 
 @media only screen  and (max-width: 640px) {
+
+    body {
+        --logoWidth--: 250px;
+    }
     .mainSliderTextBox {
         left: 20px;
         font-size: 50px;
@@ -777,8 +799,8 @@ html,body {
         height: 48px;
     }
     .serviceBox h2 {
-        font-size: 35px;
-        line-height: 42px;
+        font-size: 28px;
+        line-height: 35px;
     }
     .serviceBox p {
         font-size: 16px;
@@ -828,6 +850,27 @@ html,body {
     .socialNets {
         justify-content: space-around;
     }
+    .PhonePhotoThree {
+        height: 380px; 
+    }
+    .PadPhotoThree {
+        height: 380px; 
+    }
+
+    .pcPhoto {
+        width: 425px;
+        height: 350px;
+    }
+    
+}
+
+@media only screen  and (max-width: 460px) {
+
+    .LaptopPhoto {
+        width: 425px;
+        height: 240px;
+    }
+
 }
 
 @media only screen  and (max-width: 427px) {
@@ -865,7 +908,13 @@ html,body {
     }
 
     .pcPhoto {
-        width: 85%;
+        width: 360px;
+        height: 300px;
+    }
+
+    .LaptopPhoto {
+        width: 370px;
+        height: 210px;
     }
 
     .PhonePhotoThree {
@@ -879,7 +928,7 @@ html,body {
     }
 
     .PrinterPhoto {
-        width: 345px;
+        width: 370px;
         height: 180px;
         bottom: 50px;
     }
