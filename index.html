@@ -27,11 +27,35 @@
             <span>|</span>
             <a href = "#footer">КОНТАКТИ</a>
     </div>
+
+    <div class="mobileNavigation" id = "side">
+        <div class="nav">
+            <img src="media/icons/logoIcon.png" width="100%" height="100%" class="mobileNavigationIcon" alt="logo">
+            <button onclick="sideSliderControlTWo()" id = "but"><img src="media/icons/menu.png" width="18px" height="18px"></button>
+        </div>
+        <div class="list">
+            <a href="ddd">Ремонт комп’ютерів</a>
+            <hr>
+            <a>Ремонт ноутбуків </a>
+            <hr>
+            <a>Ремонт смартфонів</a>
+            <hr>
+            <a>Ремонт планшетів</a>
+            <hr>
+            <a>Ремонт принтерів</a>
+            <hr>
+            <a href = "#footer">Контакти</a>
+        </div>
+    </div>
+
+
+
     <div class="slick-slider">
         <div><img src="media/SliderItem1.png" width="100%" height="519px"></div>
         <div><img src="media/SliderItem2.jpg" width="100%" height="519px"></div>
         <div><img src="media/SliderItem3.jpg" width="100%" height="519px"></div>
     </div>
+
     <div class="mainSlider" id = "#mainSlider">
         <div class="mainSliderTextBox">
             <h1>Ремонт техніки<br>в Білій Церкві</h1>
@@ -45,7 +69,6 @@
             </div>
         </div>
         <div class="mainSliderDecoration"></div>
-        </div>
     </div>
 
     <div class="serviceBox">
@@ -193,13 +216,72 @@
 
     <script>
         var item = parseInt($('.mainSlider').css('width'));
-        console.log($('body').css('--textDecorationBorderRight--'));
         if(item > 425) {
             $('.mainSliderDecoration').css('width', item* 0.535 + 'px');
         
             $('body').css('--textDecorationBorderRight--', item* 0.3 + 'px')
         } else {
             $('.mainSliderDecoration').css('width', item* 0.85 + 'px');
+        }
+    </script>
+
+    <script>
+        /*
+        function sideSliderControl() {
+            if(parseInt($('.sidenav').css('height')) == 0) {
+                document.getElementById("side").style.height = "250px";
+                $('body').css('overflow', 'hidden');
+            } else {
+                document.getElementById("side").style.height = "0px";
+                $('body').css('overflow', 'visible');
+            }
+        }*/
+
+
+
+
+        function sideSliderControl() {
+            if(parseInt($('.sidenav').css('height')) == 0) {
+                if(checkSlider()) {
+                    let top;
+                    $('.sidenav').css('position', 'fixed');
+                    top = parseInt($('.header').css('height')) + 38;
+                    $('.sidenav').css('top', top + 'px');
+                }
+                document.getElementById("side").style.height = "250px";
+                $('body').css('overflow', 'hidden');
+            } else {
+                if($('.sidenav').css('position') == 'fixed' && !checkSlider()) {
+                    $('.sidenav').css('position', 'stiky');
+                    $('.sidenav').css('top', '38px');
+                }
+                document.getElementById("side").style.height = "0px";
+                $('body').css('overflow', 'visible');
+            }
+        }
+
+        function sideSliderControlTWo() {
+            let heiht = window.innerHeight + 1;
+            if(parseInt($('.mobileNavigation').css('height')) == 38) {
+                document.getElementById("side").style.height = heiht + 'px';
+                $('body').css('overflow', 'hidden');
+                $('.mobileNavigation').css('background', 'black');
+                $('#but').css('background', 'black');
+            } else {
+                document.getElementById("side").style.height = "38px";
+                $('body').css('overflow', 'visible');
+                $('.mobileNavigation').css('background', '#1D1D1D');
+                $('#but').css('background', '#1D1D1D');
+            }
+        }
+
+        function checkSlider() {
+            var blockPosition = $('.slick-slider').offset().top, 
+            windowScrollPosition = $(window).scrollTop();
+
+            if( windowScrollPosition < blockPosition ) {
+                return true;
+            }
         }
     </script>
 </body>
