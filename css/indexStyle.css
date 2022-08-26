@@ -179,7 +179,7 @@ html,body {
 
 
 
-.navigation, .mobileNavigation a {
+.navigation a, .mobileNavigation a {
     text-decoration: none;
     color: #FFFFFF;
 }
