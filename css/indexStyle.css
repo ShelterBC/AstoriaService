@@ -118,6 +118,8 @@ html,body {
     width: 100%;
     overflow-y: hidden;
     transition: 0.9s;
+
+    z-index: 10000000000;
 }
 
 .nav {
@@ -173,17 +175,7 @@ html,body {
     border: 0;
 }
 
-.sidenav {
-    height: 0;
-    width: 100%;
-    position: sticky;
-    z-index: 100;
-    top: 38px;
-    left: 0;
-    background-color: #111;
-    overflow-y: hidden;
-    transition: visibility 0s linear 1s;
-}
+
 
 
 
@@ -201,7 +193,7 @@ html,body {
     position: absolute;
     top:203px;
     width: var(--regularWidth--);
-    height: 519px;
+    height: var(--mainSliderheight--);
 }
 
 .mainSliderDecoration {
@@ -276,6 +268,7 @@ html,body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .serviceBox h2 {
@@ -944,3 +937,69 @@ html,body {
     }
 
 }
+
+@media only screen  and (max-width: 377px) {
+    .serviceBox h2 {
+        font-size: 22px;
+        line-height: 25px;
+        margin: 10px;
+    }
+
+    .serviceBox a {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .serviceBox p {
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .serviceBox {
+        height: 400px;
+    }
+    .pcPhoto {
+        width: 325px;
+        height: 280px;
+    }
+    .LaptopPhoto {
+        width: 325px;
+        height: 170px;
+    }
+    .PhonePhotoThree {
+        width: 270px;
+        height: 290px;
+    }
+    .PadPhotoThree {
+        width: 320px;
+        height: 300px;
+    }
+    .PrinterPhoto {
+        width: 325px;
+        height: 170px;
+    }
+    .mainSliderIcon {
+        width: 32px;
+        height: 32px;
+    }
+    .mainSlider p {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .mainSliderTextBox h1 {
+        font-size: 35px;
+        line-height: 55px;
+    }
+    .mainSliderAchives {
+        gap: 20px 25px;
+    }
+
+    .mainSliderTextBox {
+        width: 300px;
+    }
+
+   body {
+    --mainSliderheight--: 350px;
+   }
+
+}
+
