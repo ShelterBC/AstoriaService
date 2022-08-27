@@ -206,27 +206,28 @@
             $('.mainSliderDecoration').css('width', item + 'px');
         }
     </script>
-        <script>
-            var location = {lat: 49.7993871, lng: 30.1168922};
-            var locationTwo = {lat: 49.7871995, lng: 30.1488960};
-            var center = {lat: 49.7912728, lng: 30.1305992};
-            var zoomSize;
-            window.innerWidth <= 500? zoomSize = 15 : zoomSize = 14;
-    
-            function initMap () {
-              var opt =  {
-                center: center,
-                zoom: zoomSize
-              }
-              var mymap = new google.maps.Map(document.getElementById("map"), opt);
-              var marker = new google.maps.Marker({
-                position: locationOne, map:mymap
-              });
-              var marker = new google.maps.Marker({
-                position: locationTwo, map:mymap
-              });
-            }
-        </script>
+<script>
+    var locationOne = {lat: 49.7993871, lng: 30.1168922};
+    var locationTwo = {lat: 49.7871995, lng: 30.1488960};
+    var center = {lat: 49.7912728, lng: 30.1305992};
+    var zoomSize ;
+    window.innerWidth <= 500? zoomSize = 15 : zoomSize = 14;
+
+    function initMap () {
+      var opt =  {
+        center: center,
+        zoom: zoomSize
+      }
+      var mymap = new google.maps.Map(document.getElementById("map"), opt);
+
+      var marker = new google.maps.Marker({
+        position: locationOne, map:mymap
+      });
+      var marker = new google.maps.Marker({
+        position: locationTwo, map:mymap
+      });
+    }
+</script>
 
     <script>
 
