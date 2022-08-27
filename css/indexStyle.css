@@ -102,7 +102,7 @@ html,body {
 }
 
 .mobileNavigation {
-    height: 38px;
+    height: 48px;
     background: #1D1D1D;
     color: #FFFFFF;
 
@@ -125,7 +125,7 @@ html,body {
 .nav {
     display: flex;
     width: 100%;
-    height: 38px;
+    height: 48px;
     justify-content: center;
     align-items: center;
 
@@ -160,9 +160,9 @@ html,body {
     margin-inline-start: auto;
 }
 
-.mobileNavigationIcon {
-    width: 26px;
-    height: 26px;
+.mobileNavigationLogo {
+    width: 208px;
+    height: 40px;
 }
 
 .mobileNavigation button {
@@ -651,8 +651,6 @@ html,body {
     }
     .navigation {
         display: none;
-        width: calc(100% - 10px);
-        padding: 0 5px;
     }
     .mainSliderTextBox h1 {
         margin: 0;
@@ -668,6 +666,7 @@ html,body {
         position: absolute;
         top: 128px;
         height: 450px;
+        top: 48px;
     }
 
     .serviceBox {
@@ -686,15 +685,8 @@ html,body {
         line-height: 22px;
         margin: 12px;
     }
-    .PhonePhotoOne {
-        width: 47%;
-        height: 350px;
-        display: none;
-    }
 
-    .PhonePhotoTwo {
-        width: 40%;
-        height: 340px;
+    .PhonePhotoTwo, .PhonePhotoOne, .PadPhotoOne, .PadPhotoTwo, .header {
         display: none;
     }
     .PhonePhotoThree {
@@ -702,16 +694,6 @@ html,body {
     }
     .phones, .pads {
         justify-content: center;
-    }
-    .PadPhotoOne {
-        width: 42%;
-        height: 390px;
-        display: none;
-    }
-    .PadPhotoTwo {
-        width: 40%;
-        height: 340px;
-        display: none;
     }
 
     .PadPhotoThree {
@@ -1017,9 +999,6 @@ html,body {
         --logoWidth--: 230px;
         --headerHeight--: 80px;
         --mainSliderheight--: 320px;
-    }
-    .mainSlider {
-        top: 118px;
     }
 
     .mainSliderTextBox {
