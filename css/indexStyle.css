@@ -866,7 +866,7 @@ html,body {
 
 }
 
-@media only screen  and (max-width: 427px) {
+@media only screen  and (max-width: 435px) {
 
     body {
         --mainSliderheight--: 380px;
