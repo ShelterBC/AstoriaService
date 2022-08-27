@@ -25,7 +25,7 @@
             <span>|</span>
             <a>РЕМОНТ ПРИНТЕРІВ</a>
             <span>|</span>
-            <a href = "#footer">КОНТАКТИ</a>
+            <a id = 'footerScroll'>КОНТАКТИ</a>
     </div>
 
     <div class="mobileNavigation" id = "side">
@@ -44,7 +44,7 @@
             <hr>
             <a>Ремонт принтерів</a>
             <hr>
-            <a href = "#footer">Контакти</a>
+            <a id = 'footerScrollmobile'>Контакти</a>
         </div>
     </div>
 
@@ -126,7 +126,7 @@
         </div>
     </div>
 
-    <div class="footer" name = "footer">
+    <div class="footer">
         <div class="footerLogoBox">
             <a name = "footer"></a>
             <img src="media/footerLogo.png" width="100%" height="100%" class="footerLogo" alt="logo">
@@ -206,30 +206,34 @@
             $('.mainSliderDecoration').css('width', item + 'px');
         }
     </script>
-<script>
-    var locationOne = {lat: 49.7993871, lng: 30.1168922};
-    var locationTwo = {lat: 49.7871995, lng: 30.1488960};
-    var center = {lat: 49.7912728, lng: 30.1305992};
-    var zoomSize ;
-    window.innerWidth <= 500? zoomSize = 13 : zoomSize = 14;
-
-    function initMap () {
-      var opt =  {
-        center: center,
-        zoom: zoomSize
-      }
-      var mymap = new google.maps.Map(document.getElementById("map"), opt);
-
-      var marker = new google.maps.Marker({
-        position: locationOne, map:mymap
-      });
-      var marker = new google.maps.Marker({
-        position: locationTwo, map:mymap
-      });
-    }
-</script>
 
     <script>
+        var locationOne = {lat: 49.7993871, lng: 30.1168922};
+        var locationTwo = {lat: 49.7871995, lng: 30.1488960};
+        var center = {lat: 49.7912728, lng: 30.1305992};
+        var zoomSize ;
+        window.innerWidth <= 500? zoomSize = 13 : zoomSize = 14;
+
+        function initMap () {
+        var opt =  {
+            center: center,
+            zoom: zoomSize
+        }
+        var mymap = new google.maps.Map(document.getElementById("map"), opt);
+
+        var marker = new google.maps.Marker({
+            position: locationOne, map:mymap
+        });
+        var marker = new google.maps.Marker({
+            position: locationTwo, map:mymap
+        });
+        }
+    </script>
+
+
+    <script>
+
+
         function sideSliderControlTWo() {
             let heiht = window.innerHeight + 1;
             if(parseInt($('.mobileNavigation').css('height')) == 48) {
@@ -253,6 +257,42 @@
                 return true;
             }
         }
+    </script>
+
+<script>
+
+    function mobileNavigationOnScreen() {
+        return $('.mobileNavigation').css('display') == 'flex';
+    }
+
+    if(mobileNavigationOnScreen()) {
+            document.getElementById("side").style.height = "48px";
+                $('.mobileNavigation').css('background', '#1D1D1D');
+                $('#but').css('background', '#1D1D1D');
+        }
+    
+    function scroll() { // ID откуда кливаем
+        let scrollWidth;
+        if(mobileNavigationOnScreen()) {
+            scrollWidth = $(".footer").offset().top- window.innerHeight;
+        } else {
+            scrollWidth = $(".footer").offset().top;
+        }
+        $('html, body').animate({
+        scrollTop: scrollWidth  // класс объекта к которому приезжаем
+        }, 1000); // Скорость прокрутки
+    }
+
+
+
+    $("#footerScroll").click(scroll);
+    $("#footerScrollmobile").click(function() {
+        document.getElementById("side").style.height = "48px";
+        $('.mobileNavigation').css('background', '#1D1D1D');
+        $('#but').css('background', '#1D1D1D');
+        $('body').css('overflow', 'visible');
+        scroll();
+    });
     </script>
 </body>
 </html>
