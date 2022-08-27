@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "css/slick.css" type = "text/css">
+    <link rel = "stylesheet" href = "css/indexStyle.css" type = "text/css">
+    <title>Сервісний центр Astoria</title>
+</head>
+<body>
+    <div class="header">
+        <img class="headerLogo" src="media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
+    </div>
+
+    <div class="navigation">
+            <a href="ddd">РЕМОНТ КОМП’ЮТЕРІВ</a>
+            <span>|</span>
+            <a>РЕМОНТ НОУТБУКІВ </a>
+            <span>|</span>
+            <a>РЕМОНТ СМАРТФОНІВ</a>
+            <span>|</span>
+            <a>РЕМОНТ ПЛАНШЕТІВ</a>
+            <span>|</span>
+            <a>РЕМОНТ ПРИНТЕРІВ</a>
+            <span>|</span>
+            <a href = "#footer">КОНТАКТИ</a>
+    </div>
+
+    <div class="mobileNavigation" id = "side">
+        <div class="nav">
+            <img src="media/astoriaMobileLogo.png" width="100%" height="100%" class="mobileNavigationLogo" alt="logo">
+            <button onclick="sideSliderControlTWo()" id = "but"><img src="media/icons/menu.png" width="18px" height="18px"></button>
+        </div>
+        <div class="list">
+            <a href="ddd">Ремонт комп’ютерів</a>
+            <hr>
+            <a>Ремонт ноутбуків </a>
+            <hr>
+            <a>Ремонт смартфонів</a>
+            <hr>
+            <a>Ремонт планшетів</a>
+            <hr>
+            <a>Ремонт принтерів</a>
+            <hr>
+            <a href = "#footer">Контакти</a>
+        </div>
+    </div>
+
+
+
+    <div class="slick-slider">
+        <div><img src="media/SliderItem1.png" width="100%" height="519px"></div>
+        <div><img src="media/SliderItem2.jpg" width="100%" height="519px"></div>
+        <div><img src="media/SliderItem3.jpg" width="100%" height="519px"></div>
+    </div>
+
+    <div class="mainSlider" id = "#mainSlider">
+        <div class="mainSliderTextBox">
+            <h1>Ремонт техніки<br>в Білій Церкві</h1>
+            <div class="mainSliderAchives">
+                <img class = "mainSliderIcon" src="media/icons/speed.png" alt="speed" >
+                <p>Оперативно</p>
+                <img class = "mainSliderIcon" src="media/icons/cheep.png" alt="speed" >
+                <p>Доступно</p>
+                <img class = "mainSliderIcon" src="media/icons/safe.png" alt="speed" >
+                <p>Надійно</p>
+            </div>
+        </div>
+        <div class="mainSliderDecoration"></div>
+    </div>
+
+    <div class="serviceBox">
+        <h2>Ремонт та модернізація PC</h2>
+        <p>Надоїло чекати поки завантажеться сторінка в Інтернеті?<br>
+        Не працює комп’ютер?<br> Звертайся до нас</p>
+        <a>Детальніше ></a>
+        <div class="pcPhoto">
+            <img src="media/PC.png" width="100%" height="100%" alt = "pc" >
+        </div>
+    </div>
+
+    <div class="serviceBox">
+        <h2>Ремонт та чистка ноутбуків</h2>
+        <p>Шумить як ракета, а гріється як пічка?<br>
+            Поламався у найнепідходящий час? <br> Легко та швидко виправимо.</p>
+        <a>Детальніше ></a>
+        <div class="LaptopPhoto">
+            <img src="media/laptop.png" width="100%" height="100%" alt = "pc">
+        </div>
+    </div>
+    
+    <div class="serviceBox">
+        <h2>Ремонт смартфонів</h2>
+        <p>Наші майстри ремонтують 95% техніки.<br>
+            Проводимо роботи різної складності.</p>
+        <a href="ddd">Детальніше ></a>
+        <div class="phones">
+            <img src="media/PhoneOne.png" width="100%" height="100%" alt = "pc" class="PhonePhotoOne">
+            <img src="media/PhoneTwo.png" width="100%" height="100%" alt = "pc" class="PhonePhotoTwo">
+            <img src="media/PhoneThree.png" width="100%" height="100%" alt = "pc" class="PhonePhotoThree">
+        </div>
+    </div>
+
+    <div class="serviceBox">
+        <h2>Ремонт планшетів</h2>
+        <p>Виконуємо ремонти від яких відмовляються<br>
+            інші сервіси.</p>
+        <a href="ddd">Детальніше ></a>
+        <div class="pads">
+            <img src="media/padOne.png" width="100%" height="100%" alt = "pc" class="PadPhotoOne">
+            <img src="media/PadTwo.png" width="100%" height="100%" alt = "pc" class="PadPhotoTwo">
+            <img src="media/PadThree.png" width="100%" height="100%" alt = "pc" class="PadPhotoThree">
+        </div>
+    </div>
+
+
+    <div class="serviceBox">
+        <h2>Ремонт принтерів.<br>Заправка картриджів.</h2>
+        <p>Ремонтуємо 99% існуючих принтерів.<br>
+            Заправляємо лазерні картриджі.</p>
+        <a href="ddd">Детальніше ></a>
+        <div class="PrinterPhoto">
+            <img src="media/printer.png" width="100%" height="100%" alt = "pc">
+        </div>
+    </div>
+
+    <div class="footer" name = "footer">
+        <div class="footerLogoBox">
+            <a name = "footer"></a>
+            <img src="media/footerLogo.png" width="100%" height="100%" class="footerLogo" alt="logo">
+            <hr>
+        </div>
+        <div class="footerInformation">
+            <div class="location">
+                <h3 style=" grid-area: label; align-self: flex-start;">Наші відділення</h3>
+                <img src="media/icons/location.png" class="footerIcon" style=" grid-area: IconOne;">
+                <div class="adress" style=" grid-area: AdressOne;">
+                    <p>вул. С Наливайка, 24</p>
+                    <a>(поряд Нова пошта № 12)</a>
+                </div>
+                <img src="media/icons/location.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <div class="adress" style=" grid-area: AdressTwo; ">
+                    <p>вул. Леваневського, 49</p>
+                    <a>(поряд Нова пошта № 3)</a>
+                </div>
+            </div>
+            <div class="schedule">
+                <h3>Графік роботи</h3>
+                <div class="workHours">
+                    <p>Будні</p>
+                    <p style="justify-self:end">10:00 - 18:00</p>
+                    <p>Сб, Нд</p>
+                    <p style="justify-self:end">Вихідні</p>
+                </div>
+                <div class="socialNets">
+                    <a href="https://www.instagram.com/astoriaservice/"><img src="media/icons/instagramm.png" class="socialNetIcon"></a>
+                    <a href="https://www.facebook.com/astoriaService/"><img src="media/icons/facebook.png" class="socialNetIcon"></a>
+                    <a href="https://telegram.me/astoriaService"><img src="media/icons/telegram.png" class="socialNetIcon"></a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3 style=" grid-area: label; align-self: flex-start;">Контакти</h3>
+                <img src="media/icons/phone.png" class="footerIcon" style=" grid-area: IconOne;">
+                <div class="contact" style=" grid-area: ContactOne;">
+                    <a class="phoneNumber" href="tel:+380966212425">+38 (096) 621 24 25</a>
+                    <a>Замовити зворотній дзвінок</a>
+                </div>
+                <img src="media/icons/phone.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <div class="contact" style=" grid-area: ContactTwo;">
+                    <a class="phoneNumber" href="tel:+380932652763">+38 (093) 265 27 63</a>
+                    <a>Замовити зворотній дзвінок</a>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="map">
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm_pREHVrknzLJWvoLNiAlRmSshKoSuL8&callback=initMap" async defer></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.slick-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            zIndex: 0,
+        });
+    });
+    </script>
+
+    <script>
+        var item = parseInt($('.mainSlider').css('width'));
+        if(item > 425) {
+            $('.mainSliderDecoration').css('width', item* 0.535 + 'px');
+        
+            $('body').css('--textDecorationBorderRight--', item* 0.3 + 'px')
+        } else {
+            $('.mainSliderDecoration').css('width', item + 'px');
+        }
+    </script>
+        <script>
+            var location = {lat: 49.7993871, lng: 30.1168922};
+            var locationTwo = {lat: 49.7871995, lng: 30.1488960};
+            var center = {lat: 49.7912728, lng: 30.1305992};
+            var zoomSize;
+            window.innerWidth <= 500? zoomSize = 15 : zoomSize = 14;
+    
+            function initMap () {
+              var opt =  {
+                center: center,
+                zoom: zoomSize
+              }
+              var mymap = new google.maps.Map(document.getElementById("map"), opt);
+              var marker = new google.maps.Marker({
+                position: locationOne, map:mymap
+              });
+              var marker = new google.maps.Marker({
+                position: locationTwo, map:mymap
+              });
+            }
+        </script>
+
+    <script>
+
+        function sideSliderControl() {
+            if(parseInt($('.sidenav').css('height')) == 0) {
+                if(checkSlider()) {
+                    let top;
+                    $('.sidenav').css('position', 'fixed');
+                    top = parseInt($('.header').css('height')) + 38;
+                    $('.sidenav').css('top', top + 'px');
+                }
+                document.getElementById("side").style.height = "250px";
+                $('body').css('overflow', 'hidden');
+            } else {
+                if($('.sidenav').css('position') == 'fixed' && !checkSlider()) {
+                    $('.sidenav').css('position', 'stiky');
+                    $('.sidenav').css('top', '38px');
+                }
+                document.getElementById("side").style.height = "0px";
+                $('body').css('overflow', 'visible');
+            }
+        }
+
+        function sideSliderControlTWo() {
+            let heiht = window.innerHeight + 1;
+            if(parseInt($('.mobileNavigation').css('height')) == 68) {
+                document.getElementById("side").style.height = heiht + 'px';
+                $('body').css('overflow', 'hidden');
+                $('.mobileNavigation').css('background', 'black');
+                $('#but').css('background', 'black');
+            } else {
+                document.getElementById("side").style.height = "68px";
+                $('body').css('overflow', 'visible');
+                $('.mobileNavigation').css('background', '#1D1D1D');
+                $('#but').css('background', '#1D1D1D');
+            }
+        }
+
+        function checkSlider() {
+            var blockPosition = $('.slick-slider').offset().top, 
+            windowScrollPosition = $(window).scrollTop();
+
+            if( windowScrollPosition < blockPosition ) {
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
