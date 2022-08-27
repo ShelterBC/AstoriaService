@@ -230,27 +230,6 @@
 </script>
 
     <script>
-
-        function sideSliderControl() {
-            if(parseInt($('.sidenav').css('height')) == 0) {
-                if(checkSlider()) {
-                    let top;
-                    $('.sidenav').css('position', 'fixed');
-                    top = parseInt($('.header').css('height')) + 38;
-                    $('.sidenav').css('top', top + 'px');
-                }
-                document.getElementById("side").style.height = "250px";
-                $('body').css('overflow', 'hidden');
-            } else {
-                if($('.sidenav').css('position') == 'fixed' && !checkSlider()) {
-                    $('.sidenav').css('position', 'stiky');
-                    $('.sidenav').css('top', '38px');
-                }
-                document.getElementById("side").style.height = "0px";
-                $('body').css('overflow', 'visible');
-            }
-        }
-
         function sideSliderControlTWo() {
             let heiht = window.innerHeight + 1;
             if(parseInt($('.mobileNavigation').css('height')) == 68) {
