@@ -184,7 +184,7 @@ html,body {
     color: #FFFFFF;
 }
 
-.navigation,  a:hover {
+.navigation  a:hover {
     cursor: pointer;
     color: var(--mainColor--);
 }
@@ -280,7 +280,7 @@ html,body {
 
     text-align: center;
 
-    margin: 20px;
+    margin: 20px 0px;
 
     color: #000000;
 }
@@ -794,6 +794,7 @@ html,body {
     .serviceBox h2 {
         font-size: 28px;
         line-height: 35px;
+        margin: 10px 0px;
     }
     .serviceBox p {
         font-size: 16px;
@@ -942,7 +943,7 @@ html,body {
     .serviceBox h2 {
         font-size: 22px;
         line-height: 25px;
-        margin: 10px;
+        margin: 10px 0px;
     }
 
     .serviceBox a {
@@ -981,6 +982,9 @@ html,body {
         width: 32px;
         height: 32px;
     }
+    .mainSlider {
+        height: 350px;
+    }
     .mainSlider p {
         font-size: 22px;
         line-height: 24px;
@@ -1001,5 +1005,77 @@ html,body {
     --mainSliderheight--: 350px;
    }
 
+}
+
+@media only screen and (max-width: 325px) {
+    .serviceBox h2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    body {
+        --logoHeight--: 45px;
+        --logoWidth--: 230px;
+        --headerHeight--: 80px;
+        --mainSliderheight--: 320px;
+    }
+    .mainSlider {
+        top: 118px;
+    }
+
+    .mainSliderTextBox {
+        width: calc(100% - 20px);
+    }
+    .mainSliderTextBox h1 {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    .mainSliderAchives {
+        gap: 20px 15px;
+    }
+
+    .serviceBox p {
+        font-size: 8px;
+        line-height: 14px;
+    }
+
+    .serviceBox {
+        height: 320px;
+    }
+
+    .pcPhoto {
+        width: 250px;
+        height: 200px;
+    }
+
+    .LaptopPhoto {
+        width: 250px;
+        height: 130px;
+    }
+    .PhonePhotoThree {
+        width: 200px;
+        height: 220px;
+    }
+
+    .PadPhotoThree {
+        width: 250px;
+        height: 225px;
+    }
+
+    .PrinterPhoto {
+        width: 250px;
+        height: 120px;
+    }
+
+    .footerLogoBox {
+        width: 250px;
+        height: 90px;
+    }
+    .footerLogo {
+        width: 80%;
+        height: 65%;
+    }
+    
+    
 }
 
