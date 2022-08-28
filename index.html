@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="apple-touch-icon" href="media/icons/logoIcon.png">
     <link rel="shortcut icon" href="media/icons/logoIcon.png" type="image/x-icon">
 
     <link rel = "stylesheet" href = "css/slick.css" type = "text/css">
     <link rel = "stylesheet" href = "css/indexStyle.css" type = "text/css">
+    
     <title>Сервісний центр Astoria</title>
 </head>
 <body>
     <div class="header">
-        <img class="headerLogo" src="media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
+        <img onclick="reload()" class="headerLogo" src="media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
     </div>
 
     <div class="navigation">
-            <a href="ddd">РЕМОНТ КОМП’ЮТЕРІВ</a>
+            <a onclick="javascript:location.href='pages/PC.html';">РЕМОНТ КОМП’ЮТЕРІВ</a>
             <span>|</span>
             <a>РЕМОНТ НОУТБУКІВ </a>
             <span>|</span>
@@ -33,11 +34,11 @@
 
     <div class="mobileNavigation" id = "side">
         <div class="nav">
-            <img src="media/astoriaMobileLogo.png" width="100%" height="100%" class="mobileNavigationLogo" alt="logo">
+            <img onclick="reload()" src="media/astoriaMobileLogo.png" width="100%" height="100%" class="mobileNavigationLogo" alt="logo">
             <button onclick="sideSliderControlTWo()" id = "but"><img src="media/icons/menu.png" width="18px" height="18px"></button>
         </div>
         <div class="list">
-            <a href="ddd">Ремонт комп’ютерів</a>
+            <a onclick="javascript:location.href='pages/PC.html';">Ремонт комп’ютерів</a>
             <hr>
             <a>Ремонт ноутбуків </a>
             <hr>
@@ -182,13 +183,10 @@
         </div>
     </div>
 
-
-
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/indexScript.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm_pREHVrknzLJWvoLNiAlRmSshKoSuL8&callback=initMap" async defer></script>
-    
     
 </body>
 </html>
