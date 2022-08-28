@@ -1,0 +1,163 @@
+.mainLabel {
+    position: relative;
+    width: 100%;
+    height: 349px;
+}
+
+.mainLabelBackground {
+    width: 100%;
+    height: 100%;
+}
+
+.mainLabelTextbox {
+    position: absolute;
+    top: 90px;
+    left: 45px;
+
+}
+
+.mainLabel h1 {
+    font-family: Inter-extrabold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.priceLabel {
+    display: flex;
+    width: 95%;
+    height: 42px;
+    margin: 25px 2.5%;
+}
+
+.priceLabel h2 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+}
+
+.priceLabel hr {
+    content: '';
+    display: block;
+    width: 55%;
+    height: 5px;
+    background: var(--mainColor--);
+    border: 0;
+    border-radius: 10px;
+    margin-inline-start: 0;
+    margin-top: 27px;
+    margin-left: 70px;
+}
+
+.priceDescription {
+    display: flex;
+    width: 95%;
+    margin-left: 2.5%;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.priceDescription p  {
+    font-family: Inter-bold;
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.priceDescription span {
+    color: var(--mainColor--) !important;
+}
+
+table {
+    width: 95%;
+    margin-left: 2.5%;
+    border-spacing: 40px 10px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+th {
+    padding: 10px 20px;
+    background: #000000;
+    color: #ffffff;
+    border-right: 2px solid; 
+    
+
+    font-family: Inter-medium;
+}
+
+
+td {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+
+    vertical-align: middle;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #56433D;
+}
+
+.consultation {
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "label label" 
+    "textboxOne textboxTwo" 
+    "buttonOne buttonTwo" ;
+    justify-items: center;
+    align-items: center;
+}
+
+.consultation h2 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.consultation p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+
+.consultation button {
+    font-family: Inter-light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    color: white;
+    border: 0;
+    padding: 5px 10px;
+
+    background: var(--mainColor--);
+}
+
+
