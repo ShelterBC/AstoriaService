@@ -119,7 +119,7 @@ html,body {
     overflow-y: hidden;
     transition: 0.9s;
 
-    z-index: 10000000000;
+    z-index: 10000;
 }
 
 .nav {
