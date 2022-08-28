@@ -1,3 +1,8 @@
+function reload() {
+    location.reload();
+}
+
+
 $(document).ready(function(){
     $('.slick-slider').slick({
         autoplay: true,
