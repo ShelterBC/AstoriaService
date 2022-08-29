@@ -63,7 +63,7 @@
 .priceDescription {
     display: flex;
     width: 95%;
-    margin-left: 2.5%;
+    margin-left: calc(2.5% + 40px);
     justify-items: flex-start;
     align-items: center;
 }
@@ -120,14 +120,15 @@ td {
     display: grid;
     width: 100%;
     height: 500px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
     "label label" 
     "textboxOne textboxTwo" 
     "buttonOne buttonTwo" ;
     justify-items: center;
-    align-items: center;
+    align-items: baseline;
+    background: rgba(246, 246, 246, 0.21);
 }
 
 .consultation h2 {
@@ -155,9 +156,391 @@ td {
     line-height: 39px;
     color: white;
     border: 0;
-    padding: 5px 10px;
+    padding: 10px 25px;
 
     background: var(--mainColor--);
 }
 
 
+
+
+
+
+.fixBlock {
+    position: relative;
+    display: grid;
+    grid-template-columns: 610px 35px minmax(100px, 620px) 175px;
+    grid-template-rows: 295px 320px 74px 421px 195px 361px 134px 579px;
+    width: 100%;
+    height: 2379px;
+    background: #000000;
+    overflow-x: hidden;
+
+    padding: 10px 0px;
+}
+
+.PCfix {
+    width: 644px;
+    height: 690px;
+    z-index: 5;
+    overflow: hidden;
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.monoblock {
+    width: 656px;
+    height: 690px;
+    z-index: 4;
+
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+.pcComponents {
+    width: 648px;
+    height: 690px;
+    padding-left: 9px;
+    z-index: 3;
+    grid-column: 1/3;
+    grid-row: 5/8;
+}
+
+.desktop {
+    width: 656px;
+    height: 690px;
+    z-index: 4;
+    grid-column: 2/4;
+    grid-row: 7/9;
+}
+
+.fixBlock h2 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 100px;
+    color: white;
+    grid-column: 3/4;
+    grid-row: 1;
+    margin: 27px 81px 67px 77px;
+}
+
+.fixBlock p {
+    font-family: Inter-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #86868B;
+    margin: 0;
+}
+
+.fixBlock span {
+    font-family: Inter-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 58px;
+    color: white;
+}
+
+.textOne {
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 74px !important;
+    height: 255px;
+}
+
+.textTwo {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 80px 53px !important;
+    height: 260px;
+}
+
+.textThree {
+    grid-column: 3;
+    grid-row: 6;
+    margin: 80px auto 80px 113px !important;
+}
+
+.textFour {
+    grid-column: 1;
+    grid-row: 8;
+    margin: 136px auto auto 117px !important;
+}
+
+.UpgradeBlock {
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+    display: grid;
+    grid-template-columns: 597px 123px minmax(100px, 630px) 90px;
+    grid-template-rows: 111px 363px 92px 91px 85px 291px 86px 75px 760px;
+    padding: 10px 0;
+}
+
+.WideFhoto {
+    width: 720px;
+    height: 657px;
+    z-index: 5;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.macroPhoto {
+    width: 843px;
+    height: 626px;
+    z-index: 4;
+    overflow: hidden;
+    grid-column: 2/4;
+    grid-row: 4/8;
+}
+
+.macroPC {
+    width: 726px;
+    height: 883px;
+    z-index: 3;
+    overflow: hidden;
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+
+.UpgradeBlock h2 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 121px;
+    margin: 0;
+
+    color: black;
+}
+
+.UpgradeBlock p {
+    font-family: Inter-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #6E6E73;
+    margin: 0;
+}
+
+.UpgradeBlock span {
+    font-family: Inter-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 58px;
+    color: black;
+}
+
+.Upgradelabel {
+
+    grid-column: 3/4;
+    grid-row: 2;
+    margin-left: 55px;
+    width: auto;
+    height: auto;
+}
+
+.UpgradeTextBox {
+    grid-column: 1;
+    grid-row: 6;
+    margin-left: 15px;
+    width: auto;
+    height: auto;
+    width: 580px;
+    height: 291px;
+}
+
+.UpgradeAdvantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 112px;
+    margin-top: 20px;
+    grid-column: 3;
+    grid-row: 9;
+}
+
+.graphics {
+    width: 90%;
+
+    padding: 105px 85px 85px 85px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 75px 75px 50px 200px;
+
+}
+
+.graphicsListBox {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1;
+    grid-row: 1/4;
+}
+
+.graphicsList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.activated, .nonActivated  {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0;
+}
+
+.nonActivated {
+    color: #AAAAAA;
+}
+
+.activated {
+    color: black;
+    font-size: 30px;
+}
+
+.vl {
+    border-left: 1px solid #AAAAAA;
+    height: 100%;
+}
+
+.graphicsLines {
+    grid-column: 2;
+    grid-row: 1/4;
+}
+
+.graphicLine {
+    display: flex;
+}
+
+.mainLineContainer, .lineContainer  {
+    width: 60%;
+    margin-left: 35px;
+    margin-right: 25px;
+}
+
+.one {
+    width: 40%;
+}
+
+.two {
+    width: 28%;
+}
+
+.lineContainer p, .mainLineContainer p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #AAAAAA;
+}
+
+.mainLine, .line {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #000000;
+    margin-bottom: 0;
+}
+
+.line {
+    background: #AAAAAA;
+}
+
+.mainforce h3 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.mainforce p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 5px;
+}
+
+.force h4{
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 56px;
+    margin: 0;
+
+    color: #AAAAAA;
+}
+
+.graphicsDescription {
+    grid-column: 1/3;
+    grid-row: 4;
+    margin-top: 15px;
+}
+
+.graphicsDescription p, .footnote {
+    font-family: Inter-light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.footnote {
+    font-size: 12px !important;
+    line-height: 15px !important;
+}
+
+.CPU {
+    visibility: visible;
+}
+.GPU {
+    visibility: hidden;
+}
+.SSD {
+    visibility: hidden;
+}
+.RAM {
+    visibility: hidden;
+}
+
+
+
+.graph-slide.animate .graph-container .graph-caption {
+    -webkit-transition: opacity .75s ease-in;
+    transition: opacity .75s ease-in;
+    opacity: 1;
+}
+
+.graph-slide.animate .graph-container .graph-bar:after {
+    -webkit-transition: -webkit-transform .75s ease-in-out;
+    transition: -webkit-transform .75s ease-in-out;
+    transition: transform .75s ease-in-out;
+    transition: transform .75s ease-in-out, -webkit-transform .75s ease-in-out;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
