@@ -373,7 +373,7 @@ td {
 .graphics {
     width: 90%;
 
-    padding: 105px 85px 85px 85px;
+    margin: 105px 85px 85px 85px;
 
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -533,6 +533,118 @@ td {
     visibility: hidden;
 }
 
+.guard {
+    width: 100%;
+    height: 834px;
+    background: #111111;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 75px;
+}
+
+.guard h2 {
+    font-family: Inter-bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 79px;
+
+    text-align: center;
+
+    color: white;
+
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.guard span {
+    color: var(--mainColor--);
+}
+
+.guardTextbox {
+    font-family: Inter-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.guardTextbox p {
+    margin: 0;
+}
+
+.guardIcon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.guardFooter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.guardFooterAchives {
+    width: 460px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: white;
+
+    margin-left: 50px;
+    margin-bottom: 35px;
+}
+
+.guardFooterAchivesDesc a {
+    font-family: Inter-extralight;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.guardFooterAchivesPoint {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin: 17px 0 13px 0;
+}
+
+.guardFooter hr {
+    margin: 0;
+    border: 1px solid rgba(70, 70, 70, 0.9);
+    background: rgba(70, 70, 70, 0.9);
+    border-radius: 5px;
+}
+
+.guardFooterAchives p {
+    margin: 0;
+}
+
+.shild {
+    position: relative;
+    width: 773px;
+    height: 505px;
+}
+
 
 
 .graph-slide.animate .graph-container .graph-caption {
@@ -541,7 +653,7 @@ td {
     opacity: 1;
 }
 
-.mainLine {
+.mainLinesss {
     -webkit-transition: -webkit-transform .75s ease-in-out;
     transition: -webkit-transform .75s ease-in-out;
     transition: transform .75s ease-in-out;
