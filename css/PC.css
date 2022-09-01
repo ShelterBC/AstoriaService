@@ -1169,7 +1169,7 @@ td {
     }
     .graphicsList {
         display: block;
-        width: 750px;
+        width: 665px;
         overflow: hidden;
         -webkit-overflow-scrolling: touch;
     }
@@ -1294,7 +1294,7 @@ td {
         line-height: 14px;
     }
 }
-@media only screen and (max-width: 427px) {
+@media only screen and (max-width: 435px) {
     .mainLabel h1 {
         font-size: 22px;
         line-height: 61px;
@@ -1373,7 +1373,7 @@ td {
         height: 30px;
     }
     .graphicsList {
-        width: 620px;
+        width: 640px;
     }
     .nonActivated {
         font-size: 20px;
@@ -1431,3 +1431,4 @@ td {
         line-height: 25px;
     }
 }
+
