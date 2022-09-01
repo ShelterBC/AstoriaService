@@ -1389,6 +1389,9 @@ td {
         width: 95%;
         margin: 0;
     }
+    .one {
+        width: 60%;
+    }
     .mainforce h3 {
         font-size: 38px;
         line-height: 38px;
