@@ -1372,9 +1372,6 @@ td {
     .graphicsListBox {
         height: 30px;
     }
-    .graphicsList {
-        width: 640px;
-    }
     .nonActivated {
         font-size: 20px;
         line-height: 24px;
