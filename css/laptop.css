@@ -1,0 +1,238 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-medium;
+    src: url("../fonts/Roboto-Medium.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-semibold;
+    src: url("../fonts/Roboto-SemiBold.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-bold;
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-extrabold;
+    src: url("../fonts/Roboto-ExtraBold.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-light;
+    src: url("../fonts/Roboto-Light.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-extralight;
+    src: url("../fonts/Roboto-ExtraLight.otf");
+    font-display: swap;
+}
+
+.laptopFix {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    flex-direction: column;
+    align-items: center;
+
+    background: #000000;
+}
+
+.laptopFix h4, .laptopUpgrade h4 {
+    font-family: Roboto-bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-top: 0;
+
+}
+
+.laptopFix h2, .laptopUpgrade h2 {
+    font-family: Roboto-bold;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #40ef78 0, #1fcd39 51%, #25c90f 51%, var(--mainColor--) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.laptopFixTextBox, .laptopUpgradeTextBox {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+    margin-bottom: 30px;
+    
+    color: #CCCCCC;
+}
+
+.laptopUpgradeTextBox {
+    width: 82%;
+
+}
+
+.laptopFixTextBox {
+    width: 78%;
+}
+
+
+.laptopFixAchive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.achivePoint p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    text-align: center;
+    margin: 0;
+}
+
+.achivePoint h5 {
+    font-family: 'Roboto-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 49px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.laptopFixImage {
+    position: relative;
+    max-width: 1024px;
+    height: auto;
+
+    margin-top: 50px;
+}
+
+.laptopUpgrade {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    padding-top: 70px;
+
+    flex-direction: column;
+    align-items: center;
+
+    background: #000000;
+}
+
+.laptopUpgradeImage {
+    position: relative;
+    max-width: 1371px;
+    height: auto;
+
+    margin-top: 50px;
+}
+
+.activated {
+    color: #FFFFFF;
+}
+
+.mainLine {
+    background: #D9D9D9;
+}
+
+.mainforce {
+    color: white;
+}
+.graphicsDescription p, .footnote {
+    color: #AAA;
+}
+
+.force h4{
+    color: #AAAAAA;
+}
+.guard {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .laptopFix h2, .laptopUpgrade h2 {
+        font-size: 34px;
+        line-height: 40px;
+
+    }
+    .laptopFixAchive {
+        width: 85%;
+    }
+    .laptopFixImage {
+        max-width: 768px;
+    }
+    .achivePoint h5 {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+    .laptopFix {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .laptopFix h4, .laptopUpgrade h4 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+    .laptopFixTextBox, .laptopUpgradeTextBox  {
+        width: 90%;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .laptopFix h2, .laptopUpgrade h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .laptopFixImage {
+        max-width: 600px;
+    }
+    .laptopUpgradeTextBox {
+        margin-bottom: 0;
+    }
+    .laptopUpgradeImage {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .achivePoint h5 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+
