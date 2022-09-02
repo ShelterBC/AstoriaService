@@ -21,15 +21,15 @@
     <div class="navigation">
             <a onclick="reload()">РЕМОНТ КОМП’ЮТЕРІВ</a>
             <span>|</span>
-            <a>РЕМОНТ НОУТБУКІВ </a>
+            <a onclick="javascript:location.href='../pages/laptop.html';">Ремонт ноутбуків </a>
             <span>|</span>
-            <a>РЕМОНТ СМАРТФОНІВ</a>
+            <a onclick="javascript:location.href='../pages/smartphones.html';">Ремонт смартфонів</a>
             <span>|</span>
-            <a>РЕМОНТ ПЛАНШЕТІВ</a>
+            <a onclick="javascript:location.href='../pages/pads.html';">Ремонт планшетів</a>
             <span>|</span>
-            <a>РЕМОНТ ПРИНТЕРІВ</a>
+            <a onclick="javascript:location.href='../printers/PC.html';">Ремонт принтерів</a>
             <span>|</span>
-            <a id = 'footerScroll'>КОНТАКТИ</a>
+            <a id = 'footerScrollmobile'>Контакти</a>
     </div>
 
     <div class="mobileNavigation" id = "side">
@@ -40,13 +40,13 @@
         <div class="list">
             <a onclick="reload()">Ремонт комп’ютерів</a>
             <hr>
-            <a>Ремонт ноутбуків </a>
+            <a onclick="javascript:location.href='../pages/laptop.html';">Ремонт ноутбуків </a>
             <hr>
-            <a>Ремонт смартфонів</a>
+            <a onclick="javascript:location.href='../pages/smartphones.html';">Ремонт смартфонів</a>
             <hr>
-            <a>Ремонт планшетів</a>
+            <a onclick="javascript:location.href='../pages/pads.html';">Ремонт планшетів</a>
             <hr>
-            <a>Ремонт принтерів</a>
+            <a onclick="javascript:location.href='../printers/PC.html';">Ремонт принтерів</a>
             <hr>
             <a id = 'footerScrollmobile'>Контакти</a>
         </div>
@@ -54,7 +54,6 @@
 
     <div class="mainLabel">
         <picture class="mainLabelBackground">
-			<!--<source	media="(max-width: 900px)" srcset="images/logo-1260px.png">-->
             <source	media="(max-width: 1024px)" srcset="../media/PC/mainPhoto1024.png">			
 			<img  src="../media/PC/mainPhoto.png" width="100%" height="100%" alt=" PCLabel">			
 		</picture> 
@@ -512,106 +511,5 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm_pREHVrknzLJWvoLNiAlRmSshKoSuL8&callback=initMap" async defer></script>
     
 
-<script>
-    
-    function playAnimation() {
-        var lengthening = anime ({
-            targets: '.mainLine, .line',
-            width: ['0', '100%'],
-            easing: 'easeInOutQuad',
-            direction: 'alternate',
-            loop: false
-        });
-
-        var fade = anime ({
-            targets: '.graphicsDescription, .mainforce',
-            easing: 'easeInOutSine',
-            opacity: [0, 1],
-            
-        })
-        refreshScrollAnimation();
-    }
-
-    function itemActive (elementID) {
-        return $(elementID).hasClass("activated");
-    }
-
-    function showGrafic(elementID) {
-        if(elementID == '#Processor') {
-            $('.CPU').css('visibility', 'visible');
-        } else if(elementID == '#GraficProcessor') {
-            $('.GPU').css('visibility', 'visible');
-        } else if(elementID == '#SpeedDisk') {
-            $('.SSD').css('visibility', 'visible');
-        } else {
-            $('.RAM').css('visibility', 'visible');
-        }
-    }
-
-    function setActive(elementID) {
-        $(elementID).removeClass("nonActivated");
-        $(elementID).addClass("activated");
-        showGrafic(elementID);
-    }
-
-    function setnonActive(elem) {
-        $(elem).removeClass("activated");
-        $(elem).addClass("nonActivated");
-    }
-
-    function hideGrafic(elem) {
-        $(elem).css('visibility', 'hidden');
-    }
-
-    function removeActive() {
-        if($('#Processor').hasClass("activated")) {
-            setnonActive('#Processor');
-            hideGrafic('.CPU');
-        } else if($('#GraficProcessor').hasClass("activated")) {
-            setnonActive('#GraficProcessor');
-            hideGrafic('.GPU');
-        } else if($('#SpeedDisk').hasClass("activated")) {
-            setnonActive('#SpeedDisk');
-            hideGrafic('.SSD');
-        } else {
-            setnonActive('#RandomMemory');
-            hideGrafic('.RAM');
-        }
-    }
-
-    function updateGrafic(elementID) {
-        if(itemActive(elementID)) return;
-        else {
-            removeActive();
-            setActive(elementID);
-            playAnimation();
-        }
-    }
-</script>
-<script>
-    AOS.init();
-    AOS.init({
-    // Global settings:
-    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-    initClassName: 'aos-init', // class applied after initialization
-    animatedClassName: 'aos-animate', // class applied on animation
-    useClassNames: true, // if true, will add content of `data-aos` as classes on scroll
-    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 70, // offset (in px) from the original trigger point
-    delay: 100, // values from 0 to 3000, with step 50ms
-    duration: 800, // values from 0 to 3000, with step 50ms
-    easing: 'ease', // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
-</script>
 </body>
 </html>
