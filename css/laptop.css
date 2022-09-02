@@ -236,3 +236,73 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .laptopFix h4, .laptopUpgrade h4 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .laptopFix h2, .laptopUpgrade h2 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .laptopFixTextBox, .laptopUpgradeTextBox {
+        width: 95%;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .laptopUpgradeImage {
+        max-width: 475px;
+    }
+    .laptopFixImage {
+        max-width: 475px;
+    }
+    .laptopFixAchive {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .achivePoint {
+        width: 160px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .laptopFix, .laptopUpgrade {
+        align-items: flex-start;
+    }
+    .laptopFix h4, .laptopUpgrade h4 {
+        margin-left: 10px;
+    }
+    .laptopFix h2, .laptopUpgrade h2 {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .laptopFixTextBox, .laptopUpgradeTextBox {
+        width: 95%;
+        font-size: 15px;
+        line-height: 16px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .laptopFixAchive {
+        width: 99%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .achivePoint p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .achivePoint h5 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .achivePoint {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+}
+
