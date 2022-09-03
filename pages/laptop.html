@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" href="../media/icons/logoIcon.png">
+    <link rel="shortcut icon" href="../media/icons/logoIcon.png" type="image/x-icon">
+
+    <link rel = "stylesheet" href = "../css/indexStyle.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/PC.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/laptop.css" type = "text/css">
+    <link href="../css/aos.css" rel="stylesheet">
+    <title>Сервісний центр Astoria</title>
+</head>
+<body>
+    <div class="header">
+        <img onclick="javascript:location.href='../index.html';" class="headerLogo" src="../media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
+    </div>
+
+    <div class="navigation">
+            <a onclick="javascript:location.href='../pages/PC.html';">РЕМОНТ КОМП’ЮТЕРІВ</a>
+            <span>|</span>
+            <a onclick="reload()">РЕМОНТ НОУТБУКІВ </a>
+            <span>|</span>
+            <a onclick="javascript:location.href='../pages/smartphones.html';">РЕМОНТ СМАРТФОНІВ</a>
+            <span>|</span>
+            <a onclick="javascript:location.href='../pages/pads.html';">РЕМОНТ ПЛАНШЕТІВ</a>
+            <span>|</span>
+            <a onclick="javascript:location.href='../pages/printers.html';">РЕМОНТ ПРИНТЕРІВ</a>
+            <span>|</span>
+            <a id = 'footerScroll'>КОНТАКТИ</a>
+    </div>
+
+    <div class="mobileNavigation" id = "side">
+        <div class="nav">
+            <img onclick="javascript:location.href='../index.html';" src="../media/astoriaMobileLogo.png" width="100%" height="100%" class="mobileNavigationLogo" alt="logo">
+            <button onclick="sideSliderControlTWo()" id = "but"><img src="../media/icons/menu.png" width="18px" height="18px"></button>
+        </div>
+        <div class="list">
+            <a onclick="javascript:location.href='../pages/PC.html';">Ремонт комп’ютерів</a>
+            <hr>
+            <a onclick="reload()">Ремонт ноутбуків </a>
+            <hr>
+            <a onclick="javascript:location.href='../pages/smartphones.html';">Ремонт смартфонів</a>
+            <hr>
+            <a onclick="javascript:location.href='../pages/pads.html';">Ремонт планшетів</a>
+            <hr>
+            <a onclick="javascript:location.href='../pages/printers.html';">Ремонт принтерів</a>
+            <hr>
+            <a id = 'footerScrollmobile'>Контакти</a>
+        </div>
+    </div>
+
+    <div class="mainLabel">
+        <picture class="mainLabelBackground">
+            <source	media="(max-width: 600px)" srcset="../media/Laptops/mainPhotoLaptop600.png">	
+            <source	media="(max-width: 1024px)" srcset="../media/Laptops/mainPhotoLaptop1024.png">			
+			<img  src="../media/Laptops/mainPhotoLaptop.png" width="100%" height="100%" alt=" PCLabel">			
+		</picture> 
+        <div class="mainLabelTextbox">
+            <h1>Ремонт ноутбуків</h1>
+        </div>
+    </div>
+
+    <div class="price">
+        <div class="priceLabel">
+            <h2>Прайс наданих послуг</h2>
+            <hr>
+        </div>
+        <table>
+            <tr>
+              <th>Послуга</th>
+              <th>Час роботи</th>
+              <th>Ціна</th>
+            </tr>
+            <tr>
+              <td>Діагностика</td>
+              <td>До 3-х днів</td>
+              <td>від 100₴ *</td>
+            </tr>
+            <tr>
+                <td>Апаратна профілактика</td>
+                <td>До 6 годин</td>
+                <td>400₴</td>
+            </tr>
+            <tr>
+                <td>Програмна профілактика</td>
+                <td>До 6 годин</td>
+                <td>200₴</td>
+            </tr>
+            <tr>
+                <td>Налаштування ноутбука</td>
+                <td>до 3-х годин</td>
+                <td>250₴</td>
+            </tr>
+            <tr>
+                <td>Ремонт материнської плати</td>
+                <td>Від 3 годин</td>
+                <td>800₴</td>
+            </tr>
+            <tr>
+                <td>Заміна материнської плати</td>
+                <td>До 2 годин</td>
+                <td>500₴</td>
+            </tr>
+            <tr>
+                <td>Заміна клавіатури</td>
+                <td>3 години</td>
+                <td>400₴</td>
+            </tr>
+            <tr>
+                <td>Заміна батарейки BIOS</td>
+                <td>1 година</td>
+                <td>400₴</td>
+            </tr>
+            <tr>
+                <td>Заміна шлейфа матриці</td>
+                <td>до 6-х годин</td>
+                <td>600₴</td>
+            </tr>
+            <tr>
+                <td>Заміна системи охолодження</td>
+                <td>до 2-х годин</td>
+                <td>300₴</td>
+            </tr>
+            <tr>
+                <td>Заміна/ремонт роз'єму ноутбука</td>
+                <td>до 6-х годин</td>
+                <td>500₴</td>
+            </tr>
+            <tr>
+                <td>Заміна оперативної пам’яті</td>
+                <td>30 хвилин</td>
+                <td>300₴</td>
+            </tr>
+            <tr>
+                <td>Заміна HDD</td>
+                <td>1 година</td>
+                <td>300₴</td>
+            </tr>
+            <tr>
+                <td>Заміна матриці ноутбука</td>
+                <td>6 годин</td>
+                <td>800₴</td>
+            </tr>
+            <tr>
+                <td>Прошивка Bios</td>
+                <td>до 2-х днів</td>
+                <td>від 450₴</td>
+            </tr>
+            <tr>
+                <td>Заміна кабелю в зарядному пристрої</td>
+                <td>1 година</td>
+                <td>300₴</td>
+            </tr>
+            <tr>
+                <td>Ремонт корпусу ноутбука</td>
+                <td>3 години</td>
+                <td>200₴</td>
+            </tr>
+        </table>
+        <div class="priceDescription">
+            <p><span>*БЕЗКОШТОВНА ДІАГНОСТИКА</span> у разі проведення ремонту в нашому сервісі</p>
+        </div>
+    </div>
+
+    <div class="consultation">
+        <h2 style="grid-area: label;">Не знайшов необхідну послугу?</h2>
+        <p style="grid-area: textboxOne;">Проконсультуйся з нашим<br> 
+            менеджером по телефону</p>
+        <p style="grid-area: textboxTwo;">Або напиши нам<br> в mesenger</p>
+        <button style="grid-area: buttonOne;">Безкоштовна консультація</button>
+        <button style="grid-area: buttonTwo;">Обрати mesenger</button>
+    </div>
+
+    <div class="laptopFix">
+        <h4>Ремонт</h4>
+        <h2>Від установки ОС, до перекатки процесора</h2>
+        <div class="laptopFixTextBox">
+            <p>Ремонт ноутбука це нелегке завдання, яке по плечу тільки професіоналам: це зворотний бік високої ергономічності та мініатюризації,
+                яка робить їх настільки легкими та зручними. Довірити усунення несправностей ноутбука Ви можете нашому сервісному центру.
+              Наші сервісні інженери мають багаторічну практику роботи з ноутбуками різних виробників, а значить, ремонт Вашого пристрою буде
+               проведений з повним знанням справи і на найвищому рівні.</p>
+        </div>
+        <div class="laptopFixAchive">
+            <div class="achivePoint">
+                <p>Працюємо</p>
+                <h5>10 років</h5>
+            </div>
+            <div class="achivePoint">
+                <p>Мережа</p>
+                <h5>2 відділа</h5>
+            </div>
+            <div class="achivePoint">
+                <p>Ремонтів</p>
+                <h5>>10 000</h5>
+            </div>
+            <div class="achivePoint">
+                <p>Гарінтія</p>
+                <h5>30 днів</h5>
+            </div>
+        </div>
+        <picture class="laptopFixImage">	
+            <img src="../media/Laptops/laptopFix.png" width="100%" height="100%" alt="laptop">
+        </picture>
+    </div>
+    <div class="laptopUpgrade">
+        <h4>Модернізація</h4>
+        <h2>Отримай нові відчуття від твого ноутбука</h2>
+        <div class="laptopUpgradeTextBox">
+            <P>Засинаєш поки вмикається ноубук? Робота з файлами перетворюється в пекло? Лагає система від трьох відкритих вкладок у браузері? Знайомо?
+                Замінюй свої старі, неефективні компоненти та модулі на нові, високопродуктивні та насолоджуйся роботою.
+                Наші експерти детально проконсультують по можливостям апгрейду конкретно вашого пристрою та підберуть комплектующі згідно ваших потреб!
+            </P>
+        </div>
+        <picture class="laptopUpgradeImage">
+            <source	media="(max-width: 600px)" srcset="../media/Laptops/laptopUpgrade600.png">
+            <img src="../media/Laptops/laptopUpgrade.png" width="100%" height="100%" alt="laptop">
+        </picture>
+        <div class="graphics">
+            <div class="graphicsListBox">
+                <div class="graphicsList">
+                    <p class="activated" id = "Processor" onclick="updateGrafic('#Processor')">Процесор</p>
+                    <p class="nonActivated" id = "GraficProcessor" onclick="updateGrafic('#GraficProcessor')">Відеокарта</p>
+                    <p class="nonActivated" id = "SpeedDisk" onclick="updateGrafic('#SpeedDisk')">SSD диск</p>
+                    <p class="nonActivated" id = "RandomMemory" onclick="updateGrafic('#RandomMemory')">Оперативна пам'ять</p>
+                </div>
+                <div class="vl"></div>
+            </div>
+            <div class="graphicsLines CPU" >
+                <div class="graphicLine">
+                    <div class="mainLineContainer">
+                        <hr class="mainLine">
+                        <p>Intel Core i5</p>
+                    </div>
+                    <div class="mainforce">
+                        <h3>2,5x</h3>
+                        <p>Більша потужність</p>
+                    </div>
+                </div>
+                <div class="graphicLine">
+                    <div class="lineContainer one">
+                        <hr class="line">
+                        <p>Intel Core i3</p>
+                    </div>
+                    <div class="force">
+                        <h4>1,4x</h4>
+                    </div>
+                </div>
+                <div class="graphicLine">
+                    <div class="lineContainer two">
+                        <hr class="line">
+                        <p>Intel Pentium</p>
+                    </div>
+                    <div class="force">
+                        <h4>1x</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="graphicsDescription CPU">
+                <p>
+                    Процесор - основний елемент апаратного забезпечення девайсу,
+                     за допомогою якого відбувається обробка інформації.
+                     Саме на технічні характеристики процесора звертають увагу при виборі комп'ютера,
+                      адже чим більша потрібна продуктивність, тим потужнішим він повинен бути.
+                      <br><br>
+                    Згодом складність програм та операційної системи збільшується.
+                     Це пов'язано з додаванням нових функцій, ускладненням систем безпеки, а також з оновленим
+                      дизайном та анімацією. Це одна з причин, чому Ви стикаєтеся з повільною роботою.</p>
+                <p class="footnote">*Увага! Графіки не відображать точну різницю змін при апгрейді вашого девайсу. Вони демонструють різницю технологій, часу роботи та потужність між конкретними компонентами в цілому*</p>
+            </div>
+            <div class="graphicsLines GPU" >
+                <div class="graphicLine">
+                    <div class="mainLineContainer">
+                        <hr class="mainLine">
+                        <p>GTX 1660 super</p>
+                    </div>
+                    <div class="mainforce">
+                        <h3>7,3x</h3>
+                        <p>Більша потужність</p>
+                    </div>
+                </div>
+                <div class="graphicLine">
+                    <div class="lineContainer one">
+                        <hr class="line">
+                        <p>GTX 1060</p>
+                    </div>
+                    <div class="force">
+                        <h4>5,2x</h4>
+                    </div>
+                </div>
+                <div class="graphicLine">
+                    <div class="lineContainer two">
+                        <hr class="line">
+                        <p>GTX 550 Ti</p>
+                    </div>
+                    <div class="force">
+                        <h4>1x</h4>
+                    </div>
+                </div>
+            </div>
+            <div  class="graphicsDescription GPU">
+                <p>
+                    Відеокарта - важливий компонент комп'ютера/ноутбука, що відповідає за обробку та підготовку графіки до відображення на екрані.
+                    Плавний ігровий процес, робота з графічними та відеоредакторами, монтаж відео – за все це відповідає відеокарта.
+                    Чим кращий графічний адаптер, тим швидше зображення обробляється та виводиться на екран. 
+                    <br><br>
+                    Якщо Ви плануєш не тільки користуватися браузером та працювати з текстовими документами,
+                    радимо не економити на відеочіпі, адже для ігор та роботи в графічних додатках потрібен топовий графічний адаптер. Наші спеціалісти підберуть вам відеокарту згідно ваших бажань та потреб.
+                    </p>
+                <p class="footnote">*Увага! Графіки не відображать точну різницю змін при апгрейді вашого девайсу. Вони демонструють різницю технологій, часу роботи та потужність між конкретними компонентами в цілому*</p>
+            </div>
+            <div class="graphicsLines SSD" >
+                <div class="graphicLine">
+                    <div class="mainLineContainer">
+                        <hr class="mainLine">
+                        <p>SSD Samsung 980 M2</p>
+                    </div>
+                    <div class="mainforce">
+                        <h3>14сек.</h3>
+                        <p>Запус операційної системи</p>
+                    </div>
+                </div>
+                <div class="graphicLine">
+                    <div class="lineContainer one">
+                        <hr class="line">
+                        <p>Kingston A400 2.5"</p>
+                    </div>
+                    <div class="force">
+                        <h4>20сек.</h4>
+                    </div>
+                </div>
+                <div class="graphicLine">
+                    <div class="lineContainer two">
+                        <hr class="line">
+                        <p>WD BLue HDD</p>
+                    </div>
+                    <div class="force">
+                        <h4>68сек.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="graphicsDescription SSD">
+                <p>
+                    SSD диск – сучасний твердотільний накопичувач, який змістив старий HDD. SSD використовує мікросхеми замість намагнічених дисків.
+                     Саме ця технологія дозволила значно збільшити швідкість роботи диска. Різнця у швидкості реально велика, особливо якщо переходити з дуже старого HDD.
+                      <br><br>
+                      У деяких тестах SSD при читанні інформації перевершують HDD в 80-100 разів по швидкості. Ви собі можете це уявити?<br>
+                      Наприклад, операційна система Windows з SSD-накопичувачем може повністю завантажитися за лічені секунди.
+                    </p>
+                <p class="footnote">*Увага! Графіки не відображать точну різницю змін при апгрейді вашого девайсу. Вони демонструють різницю технологій, часу роботи та потужність між конкретними компонентами в цілому*</p>
+            </div>
+            <div class="graphicsLines RAM" >
+                <div class="graphicLine">
+                    <div class="mainLineContainer">
+                        <hr class="mainLine">
+                        <p>16GB</p>
+                    </div>
+                    <div class="mainforce">
+                        <h3>Топ</h3>
+                        <p>можливостей</p>
+                    </div>
+                </div>
+                <div class="graphicLine">
+                    <div class="lineContainer one">
+                        <hr class="line">
+                        <p>8GB</p>
+                    </div>
+                    <div class="force">
+                        <h4>стандарт</h4>
+                    </div>
+                </div>
+                <div class="graphicLine">
+                    <div class="lineContainer two">
+                        <hr class="line">
+                        <p>4GB</p>
+                    </div>
+                    <div class="force">
+                        <h4>абсолютний мінімум</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="graphicsDescription RAM">
+                <p>
+                    Оперативна пам'ять потрібна для роботи системних процесів: браузера, поштових клієнтів, офісних програм, комп'ютерних ігор і так далі.<br>
+                    Хоча користувачі і недооцінюють важливість оперативного пристрою. Саме від її обсягу залежить загальна працездатність системи, відсутність зависань та рівень продуктивності при багатозадачності.
+                    <br><br>
+                    4 ГБ — «Абсолютний мінімум» для роботи системи при майже повній відсутності багатозадачності.<br>
+                    8 ГБ — стандарт, якого вистачає для більшості повсякденних активностей, ігор та роботи у графічних/відеоредакторах.<br>
+                    16 ГБ — обсяг пам'яті, необхідний для роботи з великими проектами, з важкими іграми.
+                    </p>
+                <p class="footnote">*Увага! Графіки не відображать точну різницю змін при апгрейді вашого девайсу. Вони демонструють різницю технологій, часу роботи та потужність між конкретними компонентами в цілому*</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="guard">
+        <h2>Наш клієнт -<br><span>задоволений</span> клієнт</h2>
+        <div class="guardTextbox">
+            <p>Сервісний центр Асторія прагне надавати своїм клієнтам послуги найвищої якості.<br> Оскільки ми працюємо
+                не перший рік, ми розуміємо, що необхідно нашим клієнтам та<br> намагаємось повністю полегшити та
+                пришвидшити процес ремонту ваших пристроїв.</p>
+        </div>
+        <div class="guardFooter">
+            <div class="guardFooterAchives">
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/support.png" class="guardIcon">
+                    <p>Підтримка на кожному етапі ремонту</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/garanty.png" class="guardIcon">
+                    <p>Довічна гарантія на виконану роботу</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/components.png" class="guardIcon">
+                    <p>Гарантія від 30 днів на запчастини</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/postach.png" class="guardIcon">
+                    <p>Постачальники перевірені роками</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/quality.png" class="guardIcon">
+                    <p>Ремонти найвищої якості</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/specialist.png" class="guardIcon">
+                    <p>Найкращі спеціалісти</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesDesc">
+                    <a href="ddd">Переглянути умови надання послуг та гарнтії...</a>
+                </div>
+            </div>
+            <picture class="shild">
+                <source	media="(max-width: 600px)" srcset="../media/PC/shild600.jpg">	
+                <img class="shild" src="../media/PC/shild.jpg" width="100%" height="100%" alt="shild">
+            </picture>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerLogoBox">
+            <a name = "footer"></a>
+            <img src="../media/footerLogo.png" width="100%" height="100%" class="footerLogo" alt="logo">
+            <hr>
+        </div>
+        <div class="footerInformation">
+            <div class="location">
+                <h3 style=" grid-area: label; align-self: flex-start;">Наші відділення</h3>
+                <img src="../media/icons/location.png" class="footerIcon" style=" grid-area: IconOne;">
+                <div class="adress" style=" grid-area: AdressOne;">
+                    <p>вул. С Наливайка, 24</p>
+                    <a>(поряд Нова пошта № 12)</a>
+                </div>
+                <img src="../media/icons/location.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <div class="adress" style=" grid-area: AdressTwo; ">
+                    <p>вул. Леваневського, 49</p>
+                    <a>(поряд Нова пошта № 3)</a>
+                </div>
+            </div>
+            <div class="schedule">
+                <h3>Графік роботи</h3>
+                <div class="workHours">
+                    <p>Будні</p>
+                    <p style="justify-self:end">10:00 - 18:00</p>
+                    <p>Сб, Нд</p>
+                    <p style="justify-self:end">Вихідні</p>
+                </div>
+                <div class="socialNets">
+                    <a href="https://www.instagram.com/astoriaservice/"><img src="../media/icons/instagramm.png" class="socialNetIcon"></a>
+                    <a href="https://www.facebook.com/astoriaService/"><img src="../media/icons/facebook.png" class="socialNetIcon"></a>
+                    <a href="https://telegram.me/astoriaService"><img src="../media/icons/telegram.png" class="socialNetIcon"></a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3 style=" grid-area: label; align-self: flex-start;">Контакти</h3>
+                <img src="../media/icons/phone.png" class="footerIcon" style=" grid-area: IconOne;">
+                <div class="contact" style=" grid-area: ContactOne;">
+                    <a class="phoneNumber" href="tel:+380966212425">+38 (096) 621 24 25</a>
+                    <a>Замовити зворотній дзвінок</a>
+                </div>
+                <img src="../media/icons/phone.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <div class="contact" style=" grid-area: ContactTwo;">
+                    <a class="phoneNumber" href="tel:+380932652763">+38 (093) 265 27 63</a>
+                    <a>Замовити зворотній дзвінок</a>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="map">
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/indexScript.js"></script>
+    <script src = "../js/anime.min.js"></script>
+    <script src = "../js/anime.js"></script>
+    <script src = "../js/anime.es.js"></script>
+    <script src = "../js/interective.js"></script>
+    <script src = "../js/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm_pREHVrknzLJWvoLNiAlRmSshKoSuL8&callback=initMap" async defer></script>
+    
+</script>
+</body>
+</html>
