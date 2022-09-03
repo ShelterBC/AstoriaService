@@ -74,6 +74,7 @@ html,body {
 .headerLogo {
     width: var(--logoWidth--);
     height: var(--logoHeight--);
+    cursor: pointer;
 }
 
 .navigation {
@@ -119,7 +120,7 @@ html,body {
     overflow-y: hidden;
     transition: 0.9s;
 
-    z-index: 10000;
+    z-index: 10000000000;
 }
 
 .nav {
@@ -308,6 +309,7 @@ html,body {
     color: #006E36;
 
     text-decoration: none;
+    cursor: pointer;
 }
 
 
