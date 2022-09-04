@@ -1,0 +1,190 @@
+
+
+.generalInformation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.generalInformTextbox {
+    width: 80%;
+}
+
+.generalInformation p {
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+
+    color: #000000;
+}
+
+.generalInformation span {
+    font-family: Inter-bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #006E36;
+}
+
+.generalInformationImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.fixSmartphones {
+    width: 100%;
+    background-color: black;
+    padding: 50px 0;
+}
+
+.fixSmartphonesContainer {
+    display: grid;
+    margin-left: 40px;
+
+    grid-template-columns: 350px 575px 475px;
+    grid-template-rows: auto;
+}
+
+.fixPhotoOne {
+    display: block;
+    max-width: 350px;
+    height: auto;
+    grid-column: 1;
+}
+
+.fixPhotoTwo {
+    display: block;
+    max-width: 445px;
+    height: auto;
+    grid-column: 3;
+    justify-self: end;
+}
+
+.fixTextbox {
+    margin-left: 80px;
+    margin-right: 10px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.fixTextbox p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+.fixTextbox h2 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #FFFFFF;
+}
+.fixTextbox h3 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    
+    color: #FFFFFF;
+}
+
+
+
+.spanOne {
+    font-family: Inter-bold;
+}
+
+.spanTwo {
+    font-family: Inter-bold;
+    color: #006E36;
+}
+
+.regularBraking {
+    width: 100%;
+
+    background: #000000;
+}
+.brakingTextBox {
+    width: 60%;
+}
+
+.regularBraking h2 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    margin-top: 0;
+
+    color: #FFFFFF;
+}
+
+.brakingBox {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brakingBox h3 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.brakingBox p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 0;
+
+    color: #FFFFFF;
+}
+
+.glassPhoto {
+    max-width: 972px;
+    height: auto;
+    align-self: flex-end;
+}
+
+.batatyPhoto {
+    max-width: 864px;
+    height: auto;
+    align-self: flex-end;
+}
+
+.phonesPhoto {
+    max-width: 1024px;
+    height: auto;
+    align-self: flex-end;
+}
+
+.guard {
+    margin-top: 0;
+}
