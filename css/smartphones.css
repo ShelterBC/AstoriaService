@@ -39,24 +39,28 @@
 }
 
 .fixSmartphones {
-    width: 100%;
     background-color: black;
-    padding: 50px 0;
+    padding: 20px 0;
+    padding-left: 40px;
+    overflow: hidden;
 }
 
 .fixSmartphonesContainer {
     display: grid;
-    margin-left: 40px;
+    width: 1024px;
 
-    grid-template-columns: 350px 575px 475px;
+    grid-template-columns: 154.5px 645px 224.5px;
     grid-template-rows: auto;
+    margin: auto;
+    
 }
 
 .fixPhotoOne {
     display: block;
-    max-width: 350px;
+    width: 350px;
     height: auto;
     grid-column: 1;
+    justify-self: end;
 }
 
 .fixPhotoTwo {
@@ -64,11 +68,10 @@
     max-width: 445px;
     height: auto;
     grid-column: 3;
-    justify-self: end;
 }
 
 .fixTextbox {
-    margin-left: 80px;
+    margin-left: 20px;
     margin-right: 10px;
     grid-column: 2;
     grid-row: 1;
@@ -118,7 +121,7 @@
 
 .regularBraking {
     width: 100%;
-
+    padding-top: 40px;
     background: #000000;
 }
 .brakingTextBox {
@@ -151,8 +154,9 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
-    color: #FFFFFF;
-    margin-bottom: 15px;
+    color:  var(--mainColor--);
+
+    margin-bottom: 5px;
 }
 
 .brakingBox p {
@@ -168,23 +172,219 @@
 }
 
 .glassPhoto {
-    max-width: 972px;
+    max-width: 700px;
     height: auto;
-    align-self: flex-end;
 }
 
 .batatyPhoto {
-    max-width: 864px;
+    max-width: 657px;
     height: auto;
-    align-self: flex-end;
 }
 
 .phonesPhoto {
     max-width: 1024px;
     height: auto;
-    align-self: flex-end;
 }
 
 .guard {
     margin-top: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .generalInformTextbox {
+        width: 90%;
+    }
+    .generalInformation p, .generalInformation span {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .fixSmartphonesContainer {
+        width: 768px;
+        grid-template-columns: calc(154.5px * 0.75) calc(645px * 0.75) calc(224.5px * 0.75);
+        align-items: center
+    }
+    .fixPhotoTwo {
+        max-width: 333.75px;
+    }
+    .fixPhotoOne {
+        max-width: 262.5px;
+    }
+    .fixTextbox h2 {
+        font-size: 52px;
+        line-height: 61px;
+        margin-bottom: 30px;
+    }
+    .regularBraking h2 {
+        font-size: 55px;
+        line-height: 64px;
+    }
+    .brakingTextBox {
+        width: 768px;
+    }
+    .glassPhoto {
+        max-width: 600px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .generalInformation p, .generalInformation span {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .generalInformTextbox {
+        width: 95%;
+    }
+
+    .regularBraking h2 {
+        font-size: 45px;
+        line-height: 54px;
+    }
+    .brakingTextBox {
+        width: 500px;
+    }
+    .brakingBox h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .brakingBox p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .brakingTextBox {
+        width: 500px;
+    }
+    .glassPhoto {
+        max-width: 400px;
+    }
+    .batatyPhoto {
+        max-width: 500px;
+    }
+    .fixTextbox h2 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .fixTextbox p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .fixTextbox h3 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+    .fixSmartphonesContainer {
+        width: 500px;
+        grid-template-columns: 37.5px 425px 37.5px;
+        align-items: center;
+    }
+    .fixPhotoTwo {
+        max-width: 265.5px;
+    }
+    .fixSmartphones {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .brakingBox p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .brakingTextBox {
+        width: 375px;
+    }
+    .brakingBox h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .regularBraking h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .glassPhoto {
+        max-width: 300px;
+    }
+    .batatyPhoto {
+        max-width: 375px;
+    }
+    .batatyPhoto {
+        max-width: 375px;
+    }
+    .fixSmartphonesContainer {
+        width: 375px;
+        grid-template-columns: 37.5px 300px 37.5px;
+        align-items: center;
+        /* margin: 0; */
+    }
+    .fixTextbox h2 {
+        font-size: 35px;
+        line-height: 40px;
+    
+    }
+    .fixTextbox p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .fixTextbox h3 {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .fixPhotoTwo, .fixPhotoOne {
+        max-width: 165.5px;
+    }
+    .generalInformTextbox {
+        width: 100%;
+    }
+    .generalInformation p, .generalInformation span {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .generalInformation p, .generalInformation span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .fixTextbox h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .fixTextbox h3 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .fixSmartphonesContainer {
+        width: 320px;
+        grid-template-columns: 35px 250px 35px;
+        align-items: center;
+        /* margin: 0; */
+    }
+    .fixPhotoTwo, .fixPhotoOne {
+        max-width: 120.5px;
+    }
+    .fixTextbox p {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .regularBraking h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .brakingBox h3 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .brakingTextBox {
+        width: 300px;
+    }
+    .brakingBox p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .glassPhoto {
+        max-width: 200px;
+    }
+    .batatyPhoto {
+        max-width: 300px;
+    }
 }
