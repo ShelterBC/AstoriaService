@@ -27,75 +27,32 @@
   }
 
   @media only screen  and (max-width: 768px) {
-    .slider__item {
-      max-height: 450px;
-    
+    .slider__item,  .slick-slider, .slick-list {
+      height: 450px;
     }
-    /* Слайдер */
-    .slick-slider{
-      max-height: 450px;
-    }
-    
-    /* Ограничивающая оболочка */
-    .slick-list {
-      max-height: 450px;
-    
+    .slick-slider {
+      margin-top: 48px;
     }
 }
 
 @media only screen  and (max-width: 435px) {
-  .slider__item {
-    max-height: 380px;
-  
-  }
-  /* Слайдер */
-  .slick-slider{
-    max-height: 380px;
-  }
-  
-  /* Ограничивающая оболочка */
-  .slick-list {
-    max-height: 380px;
+  .slider__item,  .slick-slider, .slick-list {
+    height: 380px;
   
   }
 }
 
 @media only screen  and (max-width: 385px) {
-  .slider__item {
-    max-height: 350px;
-  
-  }
-  /* Слайдер */
-  .slick-slider{
-    max-height: 350px;
-  }
-  
-  /* Ограничивающая оболочка */
-  .slick-list {
-    max-height: 350px;
+  .slider__item,  .slick-slider, .slick-list {
+    height: 350px;
   
   }
 }
 
 @media only screen  and (max-width: 325px) {
-  .slider__item {
+  .slider__item,  .slick-slider, .slick-list {
     max-height: 320px;
   
   }
-  /* Слайдер */
-  .slick-slider{
-    max-height: 320px;
-  }
-  
-  /* Ограничивающая оболочка */
-  .slick-list {
-    max-height: 320px;
-  
-  }
-}
 
-  
-  
-  
-  
-  
+}
