@@ -647,9 +647,9 @@ html,body {
     }
     .mobileNavigation {
         display: flex;
-        position: sticky;
-        top: -1px;
-        z-index: 10;
+        position: fixed;
+        top: 0px;
+        z-index: 1000;
     }
     .navigation {
         display: none;
