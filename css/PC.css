@@ -953,6 +953,7 @@ td {
 @media only screen and (max-width: 768px) {
     .mainLabel {
         height: 250px;
+        margin-top: 48px;
     }
     .mainLabelTextbox {
         top: 60px;
