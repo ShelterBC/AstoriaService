@@ -73,12 +73,7 @@ function mobileNavigationOnScreen() {
 
 
 function scroll() { // ID откуда кливаем
-    let scrollWidth;
-    if(mobileNavigationOnScreen()) {
-        scrollWidth = $(".footer").offset().top- window.innerHeight;
-    } else {
-        scrollWidth = $(".footer").offset().top;
-    }
+    let scrollWidth = $(".footer").offset().top;
     $('html, body').animate({
     scrollTop: scrollWidth  // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
@@ -88,6 +83,7 @@ function scroll() { // ID откуда кливаем
 
 $("#footerScroll").click(scroll);
 $("#footerScrollmobile").click(function() {
+    console.log("Я люблю членЫ");
     document.getElementById("side").style.height = "48px";
     $('.mobileNavigation').css('background', '#1D1D1D');
     $('#but').css('background', '#1D1D1D');
@@ -192,3 +188,4 @@ mirror: false, // whether elements should animate out while scrolling past them
 anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
