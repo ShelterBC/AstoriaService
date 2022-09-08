@@ -1,0 +1,28 @@
+.glassPhotoPad, .batteryPad, .plugPhoto, .osRecover {
+    max-width: 760px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .glassPhotoPad, .batteryPad, .plugPhoto, .osRecover {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .glassPhotoPad, .batteryPad, .plugPhoto, .osRecover {
+        max-width: 425px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .glassPhotoPad, .batteryPad, .plugPhoto, .osRecover {
+        max-width: 375px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .glassPhotoPad, .batteryPad, .plugPhoto, .osRecover {
+        max-width: 300px;
+    }
+}
