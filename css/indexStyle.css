@@ -75,6 +75,13 @@ html,body {
     /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
     z-index: 1001;
   }
+  .preloaderLogo {
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 40%;
+    left: 36%;
+}
   
   .preloader__row {
     position: relative;
