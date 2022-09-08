@@ -71,12 +71,12 @@ html,body {
     right: 0;
     bottom: 0;
     /* фоновый цвет элемента */
-    background: #e0e0e0;
+    background: #000000;
     /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
     z-index: 1001;
   }
   .preloaderLogo {
-    width: 400px;
+    width: 27%;
     height: auto;
     position: relative;
     top: 40%;
