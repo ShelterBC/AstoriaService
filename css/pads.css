@@ -3,26 +3,225 @@
     height: auto;
 }
 
+.generalInformationPad {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.padInformContainer {
+    display: grid;
+    width: 1024px;
+    margin: auto;
+    grid-template-columns: 523px 501px;
+    grid-template-rows: auto 683px 240px;
+    
+}
+
+.padInformContainer h2 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+
+    color: #000000;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.padInformFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.padInformFooter h3 {
+    font-family: Inter-semibold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 67px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--mainColor--);
+}
+
+.padInformContainer p, .padInformFooter p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+    
+    color: #000000;
+}
+.padInformFooter p{
+    width: 80%;
+    text-align: center;
+}
+.padInformContainer p {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+
+.padsPhoto {
+    width: 779px;
+    height: 923px;
+    grid-column: 1;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
 @media only screen and (max-width: 1024px) {
     .glassPhotoPad, .batteryPad, .plugPhoto, .osRecover {
         max-width: 500px;
     }
+    .padInformContainer {
+        width: 768px;
+        grid-template-columns: 392.25px 375.75px;
+        grid-template-rows: auto 512.25px 180px;
+    }
+    .padInformContainer h2 {
+        font-size: 48px;
+        line-height: 61px;
+    }
+    .padInformContainer p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .padsPhoto {
+        width: 650.25px;
+        height: auto;
+    }
+    .padInformFooter h3 {
+        font-size: 45px;
+        line-height: 53px;
+    }
+    .padInformFooter p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .padInformContainer {
+        width: 500px;
+        grid-template-columns: 500px;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .padInformContainer h2 {
+        font-size: 30px;
+        line-height: 40px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .padInformContainer p {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: justify;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .padsPhoto {
+        width: 550px;
+        height: auto;
+        justify-self: start;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .padInformFooter h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .padInformFooter p {
+        width: 85%;
+    }
+    .padInformFooter h3 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
     .glassPhotoPad, .batteryPad, .plugPhoto, .osRecover {
         max-width: 425px;
     }
+    .padsPhoto {
+        width: 450px;
+    }
+    .padInformContainer {
+        width: 410px;
+        grid-template-columns: 410px;
+        grid-template-rows: auto auto auto;
+    }
+    .padInformFooter p {
+        width: 98%;
+        text-align: center;
+    }
+    
+    
 }
 
 @media only screen and (max-width: 425px) {
     .glassPhotoPad, .batteryPad, .plugPhoto, .osRecover {
         max-width: 375px;
     }
+    .padInformContainer {
+        width: 360px;
+        grid-template-columns: 360px;
+        grid-template-rows: auto auto auto;
+    }
+    .padInformContainer h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .padInformContainer p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .padsPhoto {
+        width: 400px;
+    }
+    .padInformFooter h3 {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .padInformFooter p {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
     .glassPhotoPad, .batteryPad, .plugPhoto, .osRecover {
         max-width: 300px;
+    }
+    .padInformContainer {
+        width: 310px;
+        grid-template-columns: 310px;
+        grid-template-rows: auto auto auto;
+    }
+    .padInformContainer h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .padsPhoto {
+        width: 325px;
+    }
+    .padInformContainer p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .padInformFooter p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .padInformFooter h3 {
+        font-size: 20px;
+        line-height: 22px;
     }
 }
