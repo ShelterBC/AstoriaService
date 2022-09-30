@@ -75,13 +75,17 @@ html,body {
 }
 
 .preloaderLogo {
-    width: 320px;
+    width: 100%;
     height: auto;
     position: relative;
+    display: flex;
+    justify-content: center;
     top: 35%;
-    left: 39%;
 }
-
+.preloaderPhoto {
+    width: 320px;
+    height: auto;
+}
 .loader-inner {
     bottom: 0;
     height: 60px;
