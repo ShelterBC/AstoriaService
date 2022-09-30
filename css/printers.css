@@ -1,0 +1,132 @@
+.buttonContainer {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.priceButton {
+    font-family: Inter-light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    border: 0;
+    padding: 10px 25px;
+    height: 60px;
+    width: 500px;
+    border: 2px solid black;
+
+    cursor: pointer;
+
+}
+
+.latherPrinter {
+    position: relative;
+    max-width: 677px;
+    height: auto;
+    
+}
+
+.inkPrinter {
+    position: relative;
+    max-width: 768px;
+    height: auto;
+}
+
+.laptopFixTextBox a {
+    text-decoration: none;
+    color: var(--mainColor--);
+}
+
+#inkPrice {
+    visibility: collapse;
+}
+
+.buttonActive {
+    color: white;
+    background: var(--mainColor--);
+}
+
+.buttonNonActive {
+    color: black;
+    background: white;
+}
+
+@media only screen  and (max-width: 1024px) {
+    .priceButton  {
+        font-size: 25px;
+        line-height: 32px;
+        padding: 5px 10px;
+        width: 360px;
+    }
+}
+@media only screen  and (max-width: 880px) {
+    .priceButton {
+        font-size: 25px;
+        line-height: 32px;
+        padding: 5px 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .priceButton {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 5px 5px;
+        width: 220px;
+        height: 40px;
+    }
+    .latherPrinter, .inkPrinter {
+        max-width: 430px;
+    }
+    .laptopFix h4 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+    .laptopFix h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .buttonContainer {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 435px) {
+    .priceButton {
+        font-size: 10px;
+        line-height: 12px;
+        width: 150px;
+        height: 30px;
+    }
+    .laptopFix h4 {
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .laptopFix h2 {
+        text-align: center;
+    }
+    .laptopFix {
+        align-items: center;
+    }
+    .latherPrinter, .inkPrinter {
+        max-width: 370px;
+    }
+    .buttonContainer {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+    .latherPrinter, .inkPrinter {
+        max-width: 300px;
+    }
+}
