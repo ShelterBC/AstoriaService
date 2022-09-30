@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" href="../media/icons/logoIcon.png">
+    <link rel="shortcut icon" href="../media/icons/logoIcon.png" type="image/x-icon">
+
+    <link rel = "stylesheet" href = "../css/indexStyle.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/PC.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/laptop.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/printers.css" type = "text/css">
+    <link href="../css/aos.css" rel="stylesheet">
+    <title>Сервісний центр Astoria</title>
+</head>
+<body>
+    <div class="preloader">
+        <img class="preloaderLogo" src="../media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <img onclick="javascript:location.href='../index.html';" class="headerLogo" src="../media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
+    </div>
+
+    <div class="navigation">
+            <a onclick="javascript:location.href='../pages/PC.html';">КОМП’ЮТЕРИ</a>
+            <span>|</span>
+            <a onclick="javascript:location.href='../pages/laptop.html';">НОУТБУКИ</a>
+            <span>|</span>
+            <a onclick="javascript:location.href='../pages/smartphones.html';">СМАРТФОНИ</a>
+            <span>|</span>
+            <a onclick="javascript:location.href='../pages/pads.html';">ПЛАНШЕТИ</a>
+            <span>|</span>
+            <a onclick="javascript:location.href='../pages/pads.html';">КАРТРИДЖІ</a>
+            <span>|</span>
+            <a onclick="reload()">ПРИНТЕРИ</a>
+            <span>|</span>
+            <a id = 'footerScroll'>КОНТАКТИ</a>
+    </div>
+
+    <div class="mobileNavigation" id = "side">
+        <div class="nav">
+            <img onclick="javascript:location.href='../index.html';" src="../media/astoriaMobileLogo.png" width="100%" height="100%" class="mobileNavigationLogo" alt="logo">
+            <button onclick="sideSliderControlTWo()" id = "but"><img src="../media/icons/menu.png" width="18px" height="18px"></button>
+        </div>
+        <div class="list">
+            <a onclick="javascript:location.href='../pages/PC.html';">Ремонт комп’ютерів</a>
+            <hr>
+            <a onclick="javascript:location.href='../pages/laptop.html';">Ремонт ноутбуків </a>
+            <hr>
+            <a onclick="javascript:location.href='../pages/smartphones.html';">Ремонт смартфонів</a>
+            <hr>
+            <a onclick="javascript:location.href='../pages/pads.html';">Ремонт планшетів</a>
+            <hr>
+            <a onclick="javascript:location.href='pages/pads.html';">Ремонт/Заправка картриджів</a>
+            <hr>
+            <a onclick="reload()">Ремонт принтерів</a>
+            <hr>
+            <a id = 'footerScrollmobile'>Контакти</a>
+        </div>
+    </div>
+
+    <div class="mainLabel">
+        <picture class="mainLabelBackground">
+            <source	media="(max-width: 1024px)" srcset="../media/printers/printerMainLabel1024.png">			
+			<img  src="../media/printers/printerMainLabel.png" width="100%" height="100%" alt=" PrinerLabel">			
+		</picture> 
+        <div class="mainLabelTextbox">
+            <h1>Ремонт принтерів</h1>
+        </div>
+    </div>
+
+    <div class="price">
+        <div class="priceLabel">
+            <h2>Прайс наданих послуг</h2>
+            <hr>
+        </div>
+        <div class="buttonContainer">
+            <button class="priceButton buttonActive" id = "lather" onclick="updatePrice('#lather')">Лазерні</button>
+            <button class=" priceButton buttonNonActive" id = "ink" onclick="updatePrice('#ink')">Струменеві</button>
+        </div>
+        <table  id = "latherPrice">
+            
+            <tr>
+              <th>Послуга</th>
+              <th>Час роботи</th>
+              <th>Ціна</th>
+            </tr>
+            <tr>
+                <td>Діагностика</td>
+                <td>до 3-х днів</td>
+                <td>від 100₴ *</td>
+            </tr>
+            <tr>
+                <td>Заміна блоку живлення</td>
+                <td>до 3-х годин</td>
+                <td>300₴</td>
+            </tr>
+            <tr>
+                <td>Заміна блоку шестернь</td>
+                <td>до 3-х годин</td>
+                <td>300₴</td>
+            </tr>
+            <tr>
+                <td>Заміна вузла закріплення паперу</td>
+                <td>до 3-х годин</td>
+                <td>400₴</td>
+            </tr>
+            <tr>
+                <td>Заміна гальмівного майданчика</td>
+                <td>до 3-х годин</td>
+                <td>20₴</td>
+            </tr>
+            <tr>
+                <td>Заміна гумового валу</td>
+                <td>до 3-х годин</td>
+                <td>450₴</td>
+            </tr>
+            <tr>
+                <td>Заміна лезерного блоку принтара</td>
+                <td>До 2 годин</td>
+                <td>500₴</td>
+            </tr>
+            <tr>
+                <td>Заміна основної плати</td>
+                <td>1 година</td>
+                <td>300₴</td>
+            </tr>
+            <tr>
+                <td>Ремонт основної плати</td>
+                <td>1 година</td>
+                <td>400₴</td>
+            </tr>
+            <tr>
+                <td>Заміна ролика захоплення паперу</td>
+                <td>до 3-х годин</td>
+                <td>150₴</td>
+            </tr>
+            <tr>
+                <td>Заміна термоплівки</td>
+                <td>до 3-х годин</td>
+                <td>500₴</td>
+            </tr>
+            <tr>
+                <td>Заміна шлейфу сканера</td>
+                <td>30 хвилин</td>
+                <td>350₴</td>
+            </tr>
+            <tr>
+                <td>Чистка принтара формату А4</td>
+                <td>1 година</td>
+                <td>350₴</td>
+            </tr>
+            <tr>
+                <td>Чистка принтара формату А3</td>
+                <td>1 година</td>
+                <td>450₴</td>
+            </tr>
+        </table>
+        <table id = "inkPrice">
+            <tr>
+              <th>Послуга</th>
+              <th>Час роботи</th>
+              <th>Ціна</th>
+            </tr>
+            <tr>
+              <td>Діагностика</td>
+              <td>До 3-х днів</td>
+              <td>300₴ *</td>
+            </tr>
+            <tr>
+                <td>Відновлення друкуючую головки</td>
+                <td>До 3-х днів</td>
+                <td>від 500₴</td>
+            </tr>
+            <tr>
+                <td>Виведення на зовню трубки абсорберу</td>
+                <td>До 6 годин</td>
+                <td>500₴</td>
+            </tr>
+            <tr>
+                <td>Заміна блоку шестернь</td>
+                <td>До 6 годин</td>
+                <td>700₴</td>
+            </tr>
+            <tr>
+                <td>Заміна датчика енкодера</td>
+                <td>Від 3 годин</td>
+                <td>500₴</td>
+            </tr>
+            <tr>
+                <td>Заміна вузла протяжки паперу</td>
+                <td>До 2 годин</td>
+                <td>400₴</td>
+            </tr>
+            <tr>
+                <td>Заміна друкуючуї головки</td>
+                <td>1 година</td>
+                <td>800₴</td>
+            </tr>
+            <tr>
+                <td>Заміна енкондерної стрічки</td>
+                <td>від 3-х днів</td>
+                <td>400₴</td>
+            </tr>
+            <tr>
+                <td>Заміна картриджа</td>
+                <td>2 години</td>
+                <td>150₴</td>
+            </tr>
+            <tr>
+                <td>Заміна ременя приводу каретки друкуючої головки</td>
+                <td>30 хвилин</td>
+                <td>700₴</td>
+            </tr>
+            <tr>
+                <td>Заміна ролику захоплення паперу</td>
+                <td>1 година</td>
+                <td>400₴</td>
+            </tr>
+            <tr>
+                <td>Заміна чіпу СБПЧ/ПЗК</td>
+                <td>30 хвилин</td>
+                <td>200₴</td>
+            </tr>
+            <tr>
+                <td>Прошивка принтера в безчіповий режим</td>
+                <td>до 2-х днів</td>
+                <td>від 600₴</td>
+            </tr>
+            <tr>
+                <td>Ремонт блоку живлення</td>
+                <td>до 3-х годин</td>
+                <td>від 350₴</td>
+            </tr>
+            <tr>
+                <td>Скидання датчика абсорбера(памперса)</td>
+                <td>до 3-х годин</td>
+                <td>400₴</td>
+            </tr>
+            <tr>
+                <td>Установка СБПЧ</td>
+                <td>до 3-х годин</td>
+                <td>500₴</td>
+            </tr>
+            <tr>
+                <td>Чистка принтара формату А4</td>
+                <td>до 3-х годин</td>
+                <td>600₴</td>
+            </tr>
+            <tr>
+                <td>Чистка принтара формату А3</td>
+                <td>до 3-х годин</td>
+                <td>900₴</td>
+            </tr>
+        </table>
+        <div class="priceDescription">
+            <p><span>*БЕЗКОШТОВНА ДІАГНОСТИКА</span> у разі проведення ремонту в нашому сервісі</p>
+        </div>
+    </div>
+
+
+    <div class="consultation">
+        <h2 style="grid-area: label;">Не знайшов необхідну послугу?</h2>
+        <p style="grid-area: textboxOne;">Проконсультуйся з нашим<br> 
+            менеджером по телефону</p>
+        <p style="grid-area: textboxTwo;">Або напиши нам<br> в mesenger</p>
+        <button style="grid-area: buttonOne;">Безкоштовна консультація</button>
+        <button style="grid-area: buttonTwo;">Обрати mesenger</button>
+    </div>
+
+    <div class="laptopFix">
+        <h4>Обслуговування</h4>
+        <h2>Лазерних принтерів</h2>
+        <div class="laptopFixTextBox">
+            <p>Практично у кожному будинку та офісі є оргтехніка. 
+                Ми настільки звикли до них, що роздрукувати потрібні матеріали, нещодавно відзняті фотографії, 
+                остканувати документ стало звичним. Проте при активному використанні, обладнання може виходити з ладу. 
+            <br><br>
+            Щоб не купувати нового, звертайтеся до нас. Ми обслуговуємо принтери всіх типів та розмірів.
+        </p>
+        </div>
+
+        <picture data-aos="zoom-in" data-aos-duration="1000" class="latherPrinter">	
+            <img src="../media/printers/latherPrint.png" width="100%" height="100%" alt="laptop">
+        </picture>
+    </div>
+
+    <div class="laptopFix">
+        <h4>Обслуговування та рекомендаціі експлуатації</h4>
+        <h2>Струменевих принтерів</h2>
+        <div class="laptopFixTextBox">
+            <p>Струменеві принтери є незамінними гаджетами для роботи та особистого користування. Копактний розмір, відмінна якість друку,
+                швидкість роботи це те за що всі обожнують саме цей тип принтерів. Майже все іделано, окрім?...
+                 Великим недоліком є складне самостійне обслуговування. Навіть не всі сервісні центри приймають в ремонт цю техніку
+            <br><br>
+            Не ускладнюй собі життя, звертайся до нас, отримай якісне якісне обслуговування та подовжуй безтурботне користування:)
+        </p>
+        </div>
+        <picture data-aos="zoom-in" data-aos-duration="1000" class="inkPrinter">	
+            <img src="../media/printers/inkPrinter.png" width="100%" height="100%" alt="laptop">
+        </picture>
+        <div class="laptopFixTextBox">
+            P.S: Досить часто Струменеві принтери виходять з ладу через їх неправильну експлуатацію. Нам досить сумно через це :(<br>
+            Саме тому ми склали декілька список порад, які застережуть вас від неочуваних поломок. Тицяй -> 
+            <a href="../ТР-03, Демидович Демид, ЛР-1.docx">Рекомендації користування</a>
+        </p>
+    </div>
+
+
+
+
+
+    <div class="guard">
+        <h2>Наш клієнт -<br><span>задоволений</span> клієнт</h2>
+        <div class="guardTextbox">
+            <p>Сервісний центр Асторія прагне надавати своїм клієнтам послуги найвищої якості.<br> Оскільки ми працюємо
+                не перший рік, ми розуміємо, що необхідно нашим клієнтам та<br> намагаємось повністю полегшити та
+                пришвидшити процес ремонту ваших пристроїв.</p>
+        </div>
+        <div class="guardFooter">
+            <div class="guardFooterAchives">
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/support.png" class="guardIcon">
+                    <p>Підтримка на кожному етапі ремонту</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/garanty.png" class="guardIcon">
+                    <p>Довічна гарантія на виконану роботу</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/components.png" class="guardIcon">
+                    <p>Гарантія від 30 днів на запчастини</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/postach.png" class="guardIcon">
+                    <p>Постачальники перевірені роками</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/quality.png" class="guardIcon">
+                    <p>Ремонти найвищої якості</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesPoint">
+                    <img src="../media/icons/specialist.png" class="guardIcon">
+                    <p>Найкращі спеціалісти</p>
+                </div>
+                <hr>
+                <div class="guardFooterAchivesDesc">
+                    <a href="ddd">Переглянути умови надання послуг та гарнтії...</a>
+                </div>
+            </div>
+            <picture data-aos="fade" data-aos-duration="2500" class="shild">
+                <source	media="(max-width: 600px)" srcset="../media/PC/shild600.jpg">	
+                <img class="shild" src="../media/PC/shild.jpg" width="100%" height="100%" alt="shild">
+            </picture>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerLogoBox">
+            <a name = "footer"></a>
+            <img data-aos="zoom-in" src="../media/footerLogo.png" width="100%" height="100%" class="footerLogo" alt="logo">
+            <hr>
+        </div>
+        <div class="footerInformation">
+            <div class="location">
+                <h3 data-aos="fade-down" data-aos-duration="1200" style=" grid-area: label; align-self: flex-start;">Наші відділення</h3>
+                <img src="../media/icons/location.png" class="footerIcon" style=" grid-area: IconOne;">
+                <div data-aos="fade-down" data-aos-duration="1350" class="adress" style=" grid-area: AdressOne;">
+                    <p>вул. С Наливайка, 24</p>
+                    <a>(поряд Нова пошта № 12)</a>
+                </div>
+                <img src="../media/icons/location.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <div data-aos="fade-down" data-aos-duration="1350" class="adress" style=" grid-area: AdressTwo; ">
+                    <p>вул. Леваневського, 49</p>
+                    <a>(поряд Нова пошта № 3)</a>
+                </div>
+            </div>
+            <div class="schedule">
+                <h3 data-aos="fade-down" data-aos-duration="1200" >Графік роботи</h3>
+                <div data-aos="fade-down" data-aos-duration="1300" class="workHours">
+                    <p>Будні</p>
+                    <p style="justify-self:end">10:00 - 18:00</p>
+                    <p>Сб, Нд</p>
+                    <p style="justify-self:end">Вихідні</p>
+                </div>
+                <div class="socialNets">
+                    <a data-aos="zoom-in" data-aos-duration="1350" href="https://www.instagram.com/astoriaservice/"><img src="../media/icons/instagramm.png" class="socialNetIcon"></a>
+                    <a data-aos="zoom-in" data-aos-duration="1350" href="https://www.facebook.com/astoriaService/"><img src="../media/icons/facebook.png" class="socialNetIcon"></a>
+                    <a data-aos="zoom-in" data-aos-duration="1350" href="https://telegram.me/astoriaService"><img src="../media/icons/telegram.png" class="socialNetIcon"></a>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3 data-aos="fade-down" data-aos-duration="1200"  style=" grid-area: label; align-self: flex-start;">Контакти</h3>
+                <img src="../media/icons/phone.png" class="footerIcon" style=" grid-area: IconOne;">
+                <div data-aos="fade-down" data-aos-duration="1350" class="contact" style=" grid-area: ContactOne;">
+                    <a class="phoneNumber" href="tel:+380966212425">+38 (096) 621 24 25</a>
+                    <a>Замовити зворотній дзвінок</a>
+                </div>
+                <img src="../media/icons/phone.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <div data-aos="fade-down" data-aos-duration="1350" class="contact" style=" grid-area: ContactTwo;">
+                    <a class="phoneNumber" href="tel:+380932652763">+38 (093) 265 27 63</a>
+                    <a>Замовити зворотній дзвінок</a>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="map">
+
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+    </script>
+
+    <script>
+        function buttunActive (elementID) {
+            return $(elementID).hasClass("buttonActive");
+        }
+
+        function setButtActice(elementID) {
+            $(elementID).removeClass("buttonNonActive");
+            $(elementID).addClass("buttonActive");
+        }
+        function setButtNonActive(elementID) {
+            $(elementID).removeClass("buttonActive");
+            $(elementID).addClass("buttonNonActive");
+        }
+
+        function playPriceAnimation() {
+
+            var fade = anime ({
+                targets: '#inkPrice, #latherPrice',
+                easing: 'easeInOutSine',
+                opacity: [0, 0.5, 1],
+                
+            })
+            refreshScrollAnimation();
+        }
+
+        function updatePrice(elementID) {
+            if(buttunActive(elementID)) return;
+            else {
+                setButtActice(elementID);
+                if(elementID == '#lather') {
+                    setButtNonActive('#ink');
+                    $('#inkPrice').css('visibility', 'collapse');
+                    $('#latherPrice').css('visibility', 'visible');
+                } else {
+                    setButtNonActive('#lather');
+                    $('#latherPrice').css('visibility', 'collapse');
+                    $('#inkPrice').css('visibility', 'visible');
+                }
+            }
+            playPriceAnimation();
+        }
+    </script>
+
+
+
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/indexScript.js"></script>
+    <script src = "../js/anime.min.js"></script>
+    <script src = "../js/anime.js"></script>
+    <script src = "../js/anime.es.js"></script>
+    <script src = "../js/interective.js"></script>
+    <script src = "../js/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm_pREHVrknzLJWvoLNiAlRmSshKoSuL8&callback=initMap" async defer></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
