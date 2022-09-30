@@ -41,7 +41,7 @@
 }
 
 #inkPrice {
-    visibility: collapse;
+    display: none;
 }
 
 .buttonActive {
