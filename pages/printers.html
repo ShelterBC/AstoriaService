@@ -473,14 +473,13 @@
                 setButtActice(elementID);
                 if(elementID == '#lather') {
                     setButtNonActive('#ink');
-                    $('#inkPrice').css('visibility', 'collapse');
-                    $('#latherPrice').css('visibility', 'visible');
+                    $('#inkPrice').css('display', 'none');
+                    $('#latherPrice').css('display', 'table');
                 } else {
                     setButtNonActive('#lather');
-                    $('#latherPrice').css('visibility', 'collapse');
-                    $('#inkPrice').css('visibility', 'visible');
+                    $('#latherPrice').css('display', 'none');
+                    $('#inkPrice').css('display', 'table');
                 }
-            }
             playPriceAnimation();
         }
     </script>
