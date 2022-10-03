@@ -51,7 +51,7 @@
         <span>|</span>
         <a onclick="javascript:location.href='pages/pads.html';">ПЛАНШЕТИ</a>
         <span>|</span>
-        <a onclick="javascript:location.href='../pages/pads.html';">КАРТРИДЖІ</a>
+        <a onclick="javascript:location.href='pages/cartriges.html';">КАРТРИДЖІ</a>
         <span>|</span>
         <a onclick="javascript:location.href='pages/printers.html';">ПРИНТЕРИ</a>
         <span>|</span>
@@ -72,7 +72,7 @@
             <hr>
             <a onclick="javascript:location.href='pages/pads.html';">Ремонт планшетів</a>
             <hr>
-            <a onclick="javascript:location.href='pages/pads.html';">Ремонт/Заправка картриджів</a>
+            <a onclick="javascript:location.href='pages/cartriges.html';">Ремонт/Заправка картриджів</a>
             <hr>
             <a onclick="javascript:location.href='pages/printers.html';">Ремонт принтерів</a>
             <hr>
@@ -82,9 +82,24 @@
 
 
     <div class="slick-slider">
-        <div><img src="media/SliderItem1.png" width="100%" height="519px"></div>
-        <div><img src="media/SliderItem2.jpg" width="100%" height="519px"></div>
-        <div><img src="media/SliderItem3.jpg" width="100%" height="519px"></div>
+        <picture>
+            <source	media="(max-width: 435px)" srcset="media/SliderItem1425.png" style="width: 100%; height: 380px">
+            <source	media="(max-width: 768px)" srcset="media/SliderItem1768.png" style="width: 100%; height: 450px">
+            <source	media="(max-width: 1024px)" srcset="media/SliderItem1024.png" style="width: 100%; height: 519px">
+            <img src="media/SliderItem1.png" style="width: 100%; height: 519px">
+        </picture>
+        <picture>
+            <source	media="(max-width: 435px)" srcset="media/SliderItem2425.jpg" style="width: 100%; height: 380px">
+            <source	media="(max-width: 768px)" srcset="media/SliderItem2768.jpg" style="width: 100%; height: 450px">
+            <source	media="(max-width: 1024px)" srcset="media/SliderItem21024.jpg" style="width: 100%; height: 519px">
+            <img src="media/SliderItem2.jpg" style="width: 100%; height: 519px">
+        </picture>
+        <picture>
+            <source	media="(max-width: 435px)" srcset="media/SliderItem3425.jpg" style="width: 100%; height: 380px">
+            <source	media="(max-width: 768px)" srcset="media/SliderItem3768.jpg" style="width: 100%; height: 450px">
+            <source	media="(max-width: 1024px)" srcset="media/SliderItem310024.jpg" style="width: 100%; height: 519px">
+            <img src="media/SliderItem3.jpg" style="width: 100%; height: 519px">
+        </picture>
     </div>
 
     <div class="mainSlider">
@@ -156,9 +171,8 @@
 
 
     <div class="serviceBox">
-        <h2 data-aos="fade" data-aos-duration="1000">Ремонт принтерів.<br>Заправка картриджів.</h2>
-        <p data-aos="fade" data-aos-duration="1300">Ремонтуємо майже всі існуючі принтери.<br>
-            Заправляємо картриджі.</p>
+        <h2 data-aos="fade" data-aos-duration="1000">Ремонт принтерів</h2>
+        <p data-aos="fade" data-aos-duration="1300">Ремонтуємо майже всі існуючі принтери<br>Виконуємо широкий спектор послуг</p>
         <a data-aos="fade" data-aos-duration="1400"  onclick="javascript:location.href='pages/printers.html';">Детальніше ></a>
         <div data-aos="zoom-in" class="PrinterPhoto">
             <img src="media/printer.png" width="100%" height="100%" alt = "pc">
@@ -167,6 +181,7 @@
 
     <div class="footer">
         <div class="footerLogoBox">
+            <a name = "footer"></a>
             <img data-aos="zoom-in" src="media/footerLogo.png" width="100%" height="100%" class="footerLogo" alt="logo">
             <hr>
         </div>
